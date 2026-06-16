@@ -1,253 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipment Listings</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f5f7;
-      color: #1a1a2e;
-    }
+  <!-- SEO -->
+  <title>Aquacraft Plumbing Inc. | Sonoma County Plumber | Licensed &amp; Local</title>
+  <meta name="description" content="Aquacraft Plumbing Inc. serves Sonoma County, CA with honest, professional residential and light commercial plumbing. Call Ramzy at (707) 757-3838 for water heater repair, drain cleaning, leak detection, and more." />
+  <link rel="canonical" href="https://aquacraftplumbing.com/" />
 
-    header {
-      background: #1a1a2e;
-      color: white;
-      padding: 24px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aquacraft Plumbing Inc. | Sonoma County Plumber" />
+  <meta property="og:description" content="Licensed, family-owned plumbing services in Sonoma County, CA. 5-star rated. Call (707) 757-3838." />
+  <meta property="og:image" content="/images/hero.jpg" />
+  <meta property="og:url" content="https://aquacraftplumbing.com/" />
 
-    header h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-    }
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
 
-    header span {
-      font-size: 0.85rem;
-      color: #a0aec0;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 24px;
-    }
-
-    .section-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #4a5568;
-      margin-bottom: 24px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 24px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    }
-
-    .card-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      background: #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card-image svg {
-      opacity: 0.3;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    .card-tag {
-      display: inline-block;
-      background: #ebf4ff;
-      color: #3182ce;
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    .card-title {
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .card-price {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: #2d6a4f;
-      margin-bottom: 14px;
-    }
-
-    .card-meta {
-      display: flex;
-      gap: 16px;
-      font-size: 0.83rem;
-      color: #718096;
-    }
-
-    .card-meta span {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .card-footer {
-      padding: 14px 20px;
-      border-top: 1px solid #f0f0f0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .card-footer .seller {
-      font-size: 0.8rem;
-      color: #a0aec0;
-    }
-
-    .btn {
-      background: #1a1a2e;
-      color: white;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 7px;
-      font-size: 0.83rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.15s;
-    }
-
-    .btn:hover {
-      background: #2d3561;
-    }
-  </style>
+  <!-- LocalBusiness JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Aquacraft Plumbing Inc.",
+    "url": "https://aquacraftplumbing.com/",
+    "telephone": "+17077573838",
+    "email": "aquacraftplumbing.us@gmail.com",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Sonoma County, CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/AquacraftPlumbingInc/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <header>
-    <h1>EquipList</h1>
-    <span>3 listings available</span>
-  </header>
+<!-- =====================================================================
+     1. HEADER / NAV
+     ===================================================================== -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-icon" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 3C14 3 6 10.5 6 16a8 8 0 0 0 16 0c0-5.5-8-13-8-13z" fill="#2a7fc1" stroke="#1a5a96" stroke-width="1.5"/>
+          <path d="M14 10c0 0-3.5 4-3.5 7a3.5 3.5 0 0 0 7 0c0-3-3.5-7-3.5-7z" fill="#e8f4fd"/>
+        </svg>
+      </span>
+      <span class="logo-text">Aquacraft Plumbing Inc.</span>
+    </a>
 
-  <main>
-    <p class="section-title">Heavy Equipment for Sale</p>
+    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
 
-    <div class="grid">
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#top" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#service-area" class="nav-link">Service Area</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="tel:+17077573838" class="btn btn-nav" aria-label="Call Aquacraft Plumbing now">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l1.16-1.16a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </nav>
+  </div>
+</header>
 
-      <!-- Card 1 -->
-      <div class="card">
-        <div class="card-image">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
-            <rect x="2" y="14" width="20" height="6" rx="2"/>
-            <path d="M6 14V8l4-4h8v10"/>
-            <circle cx="6" cy="20" r="1.5"/>
-            <circle cx="18" cy="20" r="1.5"/>
-          </svg>
+
+<!-- =====================================================================
+     2. HERO
+     ===================================================================== -->
+<main>
+<section class="hero" id="hero">
+  <!-- PHOTO SWAP: Replace hero.jpg with a high-quality image of a plumber working, clean pipes, water, or a Sonoma County scene. Landscape orientation works best. -->
+  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Professional plumber working on pipes in a Sonoma County home" class="hero-bg" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="hero-eyebrow">Sonoma County&apos;s Trusted Plumber</p>
+    <h1 class="hero-headline">Fast, Honest Plumbing<br />When You Need It Most</h1>
+    <p class="hero-sub">Residential and light commercial plumbing services throughout Sonoma County, CA. Licensed, family-owned, and committed to clean work and fair prices.</p>
+    <div class="hero-ctas">
+      <a href="tel:+17077573838" class="btn btn-primary btn-large" aria-label="Call Aquacraft Plumbing at 707-757-3838">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l1.16-1.16a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now &mdash; (707) 757-3838
+      </a>
+      <a href="#services" class="btn btn-secondary btn-large">View Services</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     3. TRUST BAR
+     ===================================================================== -->
+<section class="trust-bar" aria-label="Key trust indicators">
+  <div class="container">
+    <ul class="trust-list">
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Licensed Plumber
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        5-Star Google Rated
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Family-Owned
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        Prompt &amp; Professional
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Sonoma County, CA
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     4. SERVICES
+     ===================================================================== -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <h2>Plumbing Services in Sonoma County</h2>
+      <p>From routine maintenance to urgent repairs, we handle it all with care and professionalism.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <div class="card-body">
-          <span class="card-tag">Excavator</span>
-          <div class="card-title">2019 Caterpillar 320</div>
-          <div class="card-price">$148,500</div>
-          <div class="card-meta">
-            <span>📍 Denver, CO</span>
-            <span>🕐 2,400 hrs</span>
-          </div>
+        <h3>Residential Plumbing</h3>
+        <p>Complete plumbing services for your home &mdash; reliable, clean, and done right the first time.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
-        <div class="card-footer">
-          <span class="seller">Listed by Rocky Mtn Equipment</span>
-          <button class="btn">View</button>
+        <h3>Light Commercial Plumbing</h3>
+        <p>Professional plumbing solutions for small businesses, offices, and commercial properties.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 3 5 11 5 11s5-8 5-11a5 5 0 0 0-5-5z"/><circle cx="12" cy="7" r="2"/><path d="M5 20h14"/></svg>
         </div>
+        <h3>Water Heater Repair &amp; Replacement</h3>
+        <p>Water heater repair and replacement in Sonoma County &mdash; fast diagnosis, lasting fixes.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/><path d="M9 6h6M9 10h6"/></svg>
+        </div>
+        <h3>Tankless Water Heaters</h3>
+        <p>Upgrade to on-demand hot water &mdash; energy-efficient installation and expert servicing.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M4.93 4.93l14.14 14.14"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Drain Cleaning &amp; Clog Removal</h3>
+        <p>Stubborn clogs cleared quickly &mdash; kitchen, bathroom, and main line drain cleaning Sonoma County.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        </div>
+        <h3>Leak Detection &amp; Repair</h3>
+        <p>Pinpoint and fix hidden leaks before they cause costly damage &mdash; accurate, efficient service.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Fixture Installation</h3>
+        <p>Sinks, faucets, toilets, showers &mdash; precise installation with a clean, finished result every time.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Garbage Disposal Repair &amp; Replacement</h3>
+        <p>Jammed or broken disposal? We diagnose and repair or replace it the same visit when possible.</p>
+      </article>
+
+      <article class="service-card service-card--featured">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Emergency Plumbing Repairs</h3>
+        <p>Plumbing emergencies don&apos;t wait. We offer emergency service &mdash; call us any time you need urgent help.</p>
+      </article>
+
+    </div>
+    <div class="section-cta">
+      <a href="tel:+17077573838" class="btn btn-primary" aria-label="Call Aquacraft Plumbing for service">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l1.16-1.16a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Schedule a Service Call
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     5. ABOUT
+     ===================================================================== -->
+<section class="about section" id="about">
+  <div class="container about-inner">
+    <div class="about-image">
+      <!-- PHOTO SWAP: Replace about.jpg with a photo of Ramzy or the team, a truck, or a finished job. Vertical or square crops work well here. -->
+      <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80" alt="Aquacraft plumber completing a professional plumbing repair in Sonoma County" loading="lazy" />
+    </div>
+    <div class="about-content">
+      <p class="section-eyebrow">About Us</p>
+      <h2>Your Neighborhood Plumber in Sonoma County</h2>
+      <p>Aquacraft Plumbing Inc. is a family-owned plumbing company proudly serving Sonoma County and the surrounding communities. We built this business on a simple idea: treat every customer the way we&apos;d want our own family treated &mdash; with honesty, respect, and quality work.</p>
+      <p>When you call us, you talk to a real, local plumber &mdash; not a call center. We show up on time, clearly explain what needs to be done and why, and we never recommend work that isn&apos;t necessary. Our goal is always to give you a fair price and leave your home cleaner than we found it.</p>
+      <p>Whether it&apos;s a dripping faucet, a water heater replacement, a stubborn drain, or a plumbing emergency, Aquacraft is the Sonoma County plumbing team neighbors trust and refer to their friends.</p>
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     6. WHY CHOOSE US
+     ===================================================================== -->
+<section class="why section" id="why-us">
+  <div class="container">
+    <div class="section-header section-header--light">
+      <p class="section-eyebrow section-eyebrow--light">Why Aquacraft</p>
+      <h2>What Sets Us Apart</h2>
+      <p>We&apos;re not the biggest plumbing company in Sonoma County &mdash; but we&apos;re committed to being the best one to call.</p>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Prompt &amp; Professional</h3>
+        <p>We respect your time. When we say we&apos;ll be there, we mean it &mdash; and we arrive ready to work.</p>
       </div>
 
-      <!-- Card 2 -->
-      <div class="card">
-        <div class="card-image">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
-            <rect x="2" y="12" width="20" height="8" rx="2"/>
-            <path d="M6 12V9l3-5h7l2 5v3"/>
-            <circle cx="7" cy="20" r="1.5"/>
-            <circle cx="17" cy="20" r="1.5"/>
-          </svg>
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="card-body">
-          <span class="card-tag">Bulldozer</span>
-          <div class="card-title">2021 Komatsu D65PX</div>
-          <div class="card-price">$215,000</div>
-          <div class="card-meta">
-            <span>📍 Houston, TX</span>
-            <span>🕐 1,100 hrs</span>
-          </div>
-        </div>
-        <div class="card-footer">
-          <span class="seller">Listed by Lone Star Machinery</span>
-          <button class="btn">View</button>
-        </div>
+        <h3>Honest Recommendations</h3>
+        <p>We diagnose the real problem and tell you the truth. No upsells, no scare tactics &mdash; just straight answers.</p>
       </div>
 
-      <!-- Card 3 -->
-      <div class="card">
-        <div class="card-image">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="1.5">
-            <rect x="1" y="13" width="22" height="7" rx="2"/>
-            <path d="M5 13V9h14v4"/>
-            <path d="M12 4v5"/>
-            <circle cx="6" cy="20" r="1.5"/>
-            <circle cx="18" cy="20" r="1.5"/>
-          </svg>
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
-        <div class="card-body">
-          <span class="card-tag">Crane</span>
-          <div class="card-title">2018 Liebherr LTM 1090</div>
-          <div class="card-price">$395,000</div>
-          <div class="card-meta">
-            <span>📍 Chicago, IL</span>
-            <span>🕐 3,800 hrs</span>
-          </div>
+        <h3>Clean, Detail-Focused Work</h3>
+        <p>We take pride in every job. Our work is neat, our repairs last, and we clean up completely before we leave.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <div class="card-footer">
-          <span class="seller">Listed by Midwest Crane Co.</span>
-          <button class="btn">View</button>
+        <h3>Friendly Local Plumber</h3>
+        <p>Family-owned and family-oriented &mdash; we&apos;re your neighbors, and we treat every home like it&apos;s our own.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
+        <h3>Residential &amp; Light Commercial</h3>
+        <p>Experienced across homes, rentals, and small businesses &mdash; we have the skills the job requires.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3>Licensed &amp; Reliable</h3>
+        <p>Fully licensed plumbing services you can count on &mdash; done correctly and backed by our professionalism.</p>
       </div>
 
     </div>
-  </main>
+  </div>
+</section>
 
+
+<!-- =====================================================================
+     7. REVIEWS
+     ===================================================================== -->
+<section class="reviews section" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Customer Reviews</p>
+      <h2>What Sonoma County Neighbors Say</h2>
+      <div class="rating-summary">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="rating-number">5.0</span>
+        <span class="rating-count">/ 7 Google Reviews</span>
+        <a href="https://www.google.com/search?q=aquacraft+plumbing#lrd=0xaf03ddba1135db51:0x2662c081e992670a,1,,,," target="_blank" rel="noopener" class="rating-link">Read on Google &rarr;</a>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Ramzy showed up on time and clearly explained the work before starting. Knowledgeable, fair, and honest &mdash; exactly what you want in a plumber.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Sonya Abrams</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Great price and prompt service. Aquacraft fixed our water heater the same day we called. Highly recommend this family-owned business.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Ray Custer</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Professional from start to finish. Clean work, fair pricing, and he clearly explained everything. Won&apos;t use anyone else for plumbing services in Sonoma County.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Norman Vachon</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Family owned and oriented &mdash; it really shows. Prompt and professional, and the work was done beautifully. So glad we found Aquacraft.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Patricia Custer</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Honest assessment, great price, and showed up when he said he would. The work was clean and neat. Very happy with the entire experience.&rdquo;</p>
+        </blockquote>
+        <footer><cite>IP onu</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Knowledgeable and professional. He clearly explained the work and the repair was done right. Honest pricing &mdash; no surprises on the bill.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Paul Finetti</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <blockquote>
+          <p>&ldquo;Showed up on time, did clean work, and gave us a great price. This is the kind of local plumber you keep on speed dial. Family owned and it really shows.&rdquo;</p>
+        </blockquote>
+        <footer><cite>Info Mazza Catering</cite><span class="review-source">Google Review</span></footer>
+      </article>
+
+    </div>
+
+    <div class="section-cta">
+      <a href="https://www.google.com/search?q=aquacraft+plumbing#lrd=0xaf03ddba1135db51:0x2662c081e992670a,1,,,," target="_blank" rel="noopener" class="btn btn-outline">
+        Read All Reviews on Google &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     8. SERVICE AREA
+     ===================================================================== -->
+<section class="service-area section" id="service-area">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow">Where We Work</p>
+      <h2>Proudly Serving Sonoma County</h2>
+      <p>Aquacraft Plumbing Inc. provides plumbing services throughout Sonoma County, CA, including Santa Rosa, Petaluma, Rohnert Park, Healdsburg, Windsor, Sebastopol, Cotati, and the surrounding communities. Not sure if we cover your area? Give us a call &mdash; we&apos;re happy to help.</p>
+    </div>
+    <div class="map-wrapper">
+      <!-- Google Maps embed centered on Sonoma County, CA region — no specific address pin, no API key needed -->
+      <iframe
+        title="Aquacraft Plumbing service area - Sonoma County, CA"
+        src="https://maps.google.com/maps?q=Sonoma+County,+CA&t=&z=10&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="420"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <p class="map-fallback">
+      <!-- Fallback text in case the map does not load (e.g., missing API key). Replace the iframe src key above with your Google Maps Embed API key, or use the free Embed URL below instead. -->
+      We serve all of Sonoma County, CA and neighboring areas. <a href="tel:+17077573838">Call us</a> to confirm service to your location.
+    </p>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     9. CONTACT
+     ===================================================================== -->
+<section class="contact section" id="contact">
+  <div class="container contact-inner">
+
+    <div class="contact-info">
+      <p class="section-eyebrow">Get in Touch</p>
+      <h2>Request Plumbing Service</h2>
+      <p>Ready to schedule a service call or have a question? Reach Ramzy directly &mdash; we&apos;re friendly, responsive, and happy to help.</p>
+
+      <ul class="contact-details">
+        <li>
+          <a href="tel:+17077573838" class="contact-link" aria-label="Call Aquacraft Plumbing">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l1.16-1.16a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <span>
+              <strong>(707) 757-3838</strong>
+              <small>Tap to call</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:aquacraftplumbing.us@gmail.com" class="contact-link" aria-label="Email Aquacraft Plumbing">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span>
+              <strong>aquacraftplumbing.us@gmail.com</strong>
+              <small>We reply promptly</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <div class="contact-link contact-link--static">
+            <span class="contact-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <span>
+              <strong>Business Hours</strong>
+              <small>Mon&ndash;Fri: 8:00 AM &ndash; 6:00 PM</small>
+              <small>Saturday: 9:00 AM &ndash; 3:00 PM</small>
+              <small>Sunday: Emergency service only</small>
+            </span>
+          </div>
+        </li>
+      </ul>
+
+      <a href="tel:+17077573838" class="btn btn-primary btn-large">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l1.16-1.16a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (707) 757-3838
+      </a>
+    </div>
+
+    <div class="contact-form-wrap">
+      <!-- TALLY EMBED: If you set up a Tally form (tally.so), paste the Tally iframe here at deploy. The form below is a visual placeholder only — submissions are not sent. -->
+      <form class="contact-form" id="contact-form" novalidate>
+        <h3>Send Us a Message</h3>
+
+        <div class="form-group">
+          <label for="name">Your Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" placeholder="Jane Smith" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(707) 555-0100" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jane@example.com" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed <span aria-hidden="true">*</span></label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service&hellip;</option>
+            <option value="residential">Residential Plumbing</option>
+            <option value="commercial">Light Commercial Plumbing</option>
+            <option value="water-heater-repair">Water Heater Repair &amp; Replacement</option>
+            <option value="tankless">Tankless Water Heaters</option>
+            <option value="drain-cleaning">Drain Cleaning &amp; Clog Removal</option>
+            <option value="leak-detection">Leak Detection &amp; Repair</option>
+            <option value="fixture">Fixture Installation</option>
+            <option value="disposal">Garbage Disposal Repair &amp; Replacement</option>
+            <option value="emergency">Emergency Plumbing Repairs</option>
+            <option value="other">Other / Not Sure</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Describe the Issue</label>
+          <textarea id="message" name="message" rows="4" placeholder="Please describe the problem or what you need help with..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large btn-full">
+          Request Plumbing Service
+        </button>
+
+        <p class="form-note">
+          <!-- NOTE TO RAMZY: This form is not yet connected. To enable form submissions, sign up at tally.so (free), create a form with the same fields, and paste the Tally iframe here. Alternatively, Netlify Forms can be enabled by adding netlify to the <form> tag after deploying. -->
+          <small>We typically respond within a few hours during business hours. For urgent needs, please call <a href="tel:+17077573838">(707) 757-3838</a> directly.</small>
+        </p>
+      </form>
+    </div>
+
+  </div>
+</section>
+</main>
+
+
+<!-- =====================================================================
+     10. FOOTER
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text logo-text--footer">Aquacraft Plumbing Inc.</span>
+      <p>Licensed, family-owned plumbing services throughout Sonoma County, CA.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/AquacraftPlumbingInc/" target="_blank" rel="noopener" aria-label="Aquacraft Plumbing on Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.google.com/search?q=aquacraft+plumbing#lrd=0xaf03ddba1135db51:0x2662c081e992670a,1,,,," target="_blank" rel="noopener" aria-label="Aquacraft Plumbing Google Reviews">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Google Reviews
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+17077573838">(707) 757-3838</a></li>
+        <li><a href="mailto:aquacraftplumbing.us@gmail.com">aquacraftplumbing.us@gmail.com</a></li>
+        <li>
+          Mon&ndash;Fri: 8:00 AM &ndash; 6:00 PM<br />
+          Saturday: 9:00 AM &ndash; 3:00 PM<br />
+          Sunday: Emergency only
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-services">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Residential Plumbing</a></li>
+        <li><a href="#services">Water Heater Repair</a></li>
+        <li><a href="#services">Drain Cleaning</a></li>
+        <li><a href="#services">Leak Detection</a></li>
+        <li><a href="#services">Emergency Plumbing</a></li>
+        <li><a href="#services">Fixture Installation</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="footer-year"></span> Aquacraft Plumbing Inc. All rights reserved. &middot; Serving Sonoma County, CA</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
