@@ -1,8 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-import Image from 'next/image'
+import { useId, useState } from 'react'
 import type { Listing } from '@/lib/types'
+import { getSignedUploadUrl } from './actions'
 
 const CATEGORIES = [
   { value: 'construction', label: 'Construction' },
@@ -13,6 +13,14 @@ const CATEGORIES = [
 
 const CONDITIONS = ['Excellent', 'Good', 'Fair', 'Poor', 'Parts Only']
 
+interface Photo {
+  key: string
+  preview: string   // blob URL for pending uploads; public URL once done or for existing
+  url: string | null // null while uploading
+  uploading: boolean
+  failed: boolean
+}
+
 interface ListingFormProps {
   listing?: Listing
   action: (formData: FormData) => Promise<void>
@@ -20,35 +28,89 @@ interface ListingFormProps {
 }
 
 export default function ListingForm({ listing, action, submitLabel }: ListingFormProps) {
-  const [existingImages, setExistingImages] = useState<string[]>(listing?.images ?? [])
-  const [removedImages, setRemovedImages] = useState<string[]>([])
-  const [newImagePreviews, setNewImagePreviews] = useState<string[]>([])
+  const uid = useId()
+
+  const [photos, setPhotos] = useState<Photo[]>(
+    (listing?.images ?? []).map((url) => ({
+      key: url,
+      preview: url,
+      url,
+      uploading: false,
+      failed: false,
+    }))
+  )
   const [featured, setFeatured] = useState(listing?.featured ?? false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError] = useState('')
 
-  function handleRemoveExisting(url: string) {
-    setExistingImages((prev) => prev.filter((u) => u !== url))
-    setRemovedImages((prev) => [...prev, url])
+  const anyUploading = photos.some((p) => p.uploading)
+
+  async function handleFiles(e: React.ChangeEvent<HTMLInputElement>) {
+    const files = Array.from(e.target.files ?? [])
+    if (!files.length) return
+    // Reset so the same file(s) can be re-selected after a removal
+    e.target.value = ''
+
+    const entries: Photo[] = files.map((f, i) => ({
+      key: `${uid}-${i}-${f.name}-${Date.now()}`,
+      preview: URL.createObjectURL(f),
+      url: null,
+      uploading: true,
+      failed: false,
+    }))
+
+    setPhotos((prev) => [...prev, ...entries])
+
+    await Promise.all(
+      files.map(async (file, i) => {
+        const entry = entries[i]
+        try {
+          const { signedUrl, publicUrl } = await getSignedUploadUrl(file.name, file.type)
+          const res = await fetch(signedUrl, {
+            method: 'PUT',
+            body: file,
+            headers: { 'Content-Type': file.type },
+          })
+          if (!res.ok) throw new Error(`Upload failed (${res.status})`)
+          setPhotos((prev) =>
+            prev.map((p) =>
+              p.key === entry.key ? { ...p, url: publicUrl, uploading: false } : p
+            )
+          )
+        } catch {
+          setPhotos((prev) =>
+            prev.map((p) =>
+              p.key === entry.key ? { ...p, uploading: false, failed: true } : p
+            )
+          )
+        }
+      })
+    )
   }
 
-  function handleNewFiles(e: React.ChangeEvent<HTMLInputElement>) {
-    const files = Array.from(e.target.files ?? [])
-    const previews = files.map((f) => URL.createObjectURL(f))
-    setNewImagePreviews(previews)
+  function removePhoto(key: string) {
+    setPhotos((prev) => {
+      const photo = prev.find((p) => p.key === key)
+      if (photo?.preview.startsWith('blob:')) URL.revokeObjectURL(photo.preview)
+      return prev.filter((p) => p.key !== key)
+    })
   }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    if (anyUploading) {
+      setError('Please wait for all photos to finish uploading.')
+      return
+    }
     setSubmitting(true)
     setError('')
-
     try {
       const formData = new FormData(e.currentTarget)
       formData.set('featured', String(featured))
-      formData.set('keep_existing', 'true')
-      removedImages.forEach((url) => formData.append('remove_image', url))
-
+      // Pass only the final confirmed URLs — no file bytes in the body
+      photos
+        .filter((p) => p.url !== null && !p.failed)
+        .forEach((p) => formData.append('image_url', p.url!))
       await action(formData)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred')
@@ -56,7 +118,8 @@ export default function ListingForm({ listing, action, submitLabel }: ListingFor
     }
   }
 
-  const inputCls = 'w-full bg-slate-900 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors'
+  const inputCls =
+    'w-full bg-slate-900 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-amber-500 transition-colors'
   const labelCls = 'block text-sm font-medium text-slate-300 mb-1.5'
 
   return (
@@ -99,7 +162,9 @@ export default function ListingForm({ listing, action, submitLabel }: ListingFor
             >
               <option value="">Select category…</option>
               {CATEGORIES.map(({ value, label }) => (
-                <option key={value} value={value}>{label}</option>
+                <option key={value} value={value}>
+                  {label}
+                </option>
               ))}
             </select>
           </div>
@@ -195,7 +260,9 @@ export default function ListingForm({ listing, action, submitLabel }: ListingFor
             >
               <option value="">Select condition…</option>
               {CONDITIONS.map((c) => (
-                <option key={c} value={c}>{c}</option>
+                <option key={c} value={c}>
+                  {c}
+                </option>
               ))}
             </select>
           </div>
@@ -233,10 +300,14 @@ export default function ListingForm({ listing, action, submitLabel }: ListingFor
                 onClick={() => setFeatured(!featured)}
                 className={`relative w-11 h-6 rounded-full transition-colors ${featured ? 'bg-amber-500' : 'bg-slate-600'}`}
               >
-                <span className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform ${featured ? 'translate-x-5' : ''}`} />
+                <span
+                  className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform ${featured ? 'translate-x-5' : ''}`}
+                />
               </button>
               <input type="hidden" name="featured" value={String(featured)} />
-              <span className="text-slate-300 text-sm font-medium">Featured listing (shown on homepage)</span>
+              <span className="text-slate-300 text-sm font-medium">
+                Featured listing (shown on homepage)
+              </span>
             </label>
           </div>
         </div>
@@ -246,71 +317,92 @@ export default function ListingForm({ listing, action, submitLabel }: ListingFor
       <section className="bg-slate-800 border border-slate-700 rounded-xl p-6">
         <h2 className="text-white font-semibold text-base mb-5">Photos</h2>
 
-        {/* Existing photos */}
-        {existingImages.length > 0 && (
-          <div className="mb-5">
-            <p className="text-slate-400 text-sm mb-3">Current photos (click X to remove):</p>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
-              {existingImages.map((url) => (
-                <div key={url} className="relative aspect-square bg-slate-700 rounded-lg overflow-hidden group">
-                  <Image src={url} alt="listing photo" fill className="object-cover" sizes="120px" />
+        {/* Unified photo grid — existing + uploading + uploaded */}
+        {photos.length > 0 && (
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-5">
+            {photos.map((photo) => (
+              <div
+                key={photo.key}
+                className="relative aspect-square bg-slate-700 rounded-lg overflow-hidden group"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={photo.preview}
+                  alt="listing photo"
+                  className="w-full h-full object-cover"
+                />
+
+                {/* Uploading spinner */}
+                {photo.uploading && (
+                  <div className="absolute inset-0 bg-black/60 flex items-center justify-center">
+                    <div className="w-6 h-6 rounded-full border-2 border-white/30 border-t-white animate-spin" />
+                  </div>
+                )}
+
+                {/* Upload error badge */}
+                {photo.failed && (
+                  <div className="absolute inset-0 bg-red-900/80 flex items-center justify-center p-1">
+                    <span className="text-white text-xs text-center leading-tight">
+                      Upload failed
+                    </span>
+                  </div>
+                )}
+
+                {/* Remove button — hover overlay, hidden while uploading */}
+                {!photo.uploading && (
                   <button
                     type="button"
-                    onClick={() => handleRemoveExisting(url)}
+                    onClick={() => removePhoto(photo.key)}
                     className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
                     aria-label="Remove photo"
                   >
-                    <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
                     </svg>
                   </button>
-                </div>
-              ))}
-            </div>
+                )}
+              </div>
+            ))}
           </div>
         )}
 
-        {/* New file upload */}
+        {/* File picker — no name= so files are never included in the form body */}
         <div>
-          <label className={labelCls} htmlFor="images">
-            {existingImages.length > 0 ? 'Add More Photos' : 'Upload Photos'}
+          <label className={labelCls} htmlFor="photo-picker">
+            {photos.length > 0 ? 'Add More Photos' : 'Upload Photos'}
           </label>
           <input
-            id="images"
-            name="images"
+            id="photo-picker"
             type="file"
             multiple
             accept="image/*"
-            onChange={handleNewFiles}
+            onChange={handleFiles}
             className="block w-full text-slate-400 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-amber-500 file:text-slate-900 hover:file:bg-amber-400 file:cursor-pointer"
           />
-          <p className="text-slate-500 text-xs mt-2">JPG, PNG, WebP accepted. Max 10 MB per file.</p>
+          <p className="text-slate-500 text-xs mt-2">
+            JPG, PNG, WebP accepted. Photos upload directly to storage — no server body limit.
+          </p>
         </div>
-
-        {/* New image previews */}
-        {newImagePreviews.length > 0 && (
-          <div className="mt-4">
-            <p className="text-slate-400 text-sm mb-3">New photos to upload:</p>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
-              {newImagePreviews.map((src, i) => (
-                <div key={i} className="relative aspect-square bg-slate-700 rounded-lg overflow-hidden">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={src} alt={`preview ${i + 1}`} className="w-full h-full object-cover" />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Submit */}
       <div className="flex items-center gap-4">
         <button
           type="submit"
-          disabled={submitting}
+          disabled={submitting || anyUploading}
           className="px-8 py-3 bg-amber-500 hover:bg-amber-400 disabled:opacity-50 disabled:cursor-not-allowed text-slate-900 font-bold rounded-lg transition-colors"
         >
-          {submitting ? 'Saving…' : submitLabel}
+          {submitting ? 'Saving…' : anyUploading ? 'Uploading photos…' : submitLabel}
         </button>
         <a href="/admin" className="text-slate-400 hover:text-white text-sm transition-colors">
           Cancel
