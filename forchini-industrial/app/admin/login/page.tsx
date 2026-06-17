@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { createBrowserClient } from '@/lib/supabase/client'
+import { createBrowserClient } from '@supabase/ssr'
 
 export default function AdminLoginPage() {
   const router = useRouter()
@@ -16,7 +16,10 @@ export default function AdminLoginPage() {
     setError('')
     setLoading(true)
 
-    const supabase = createBrowserClient()
+    const supabase = createBrowserClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    )
     const { error: authError } = await supabase.auth.signInWithPassword({
       email,
       password,
