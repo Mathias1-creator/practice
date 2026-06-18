@@ -3,7 +3,7 @@ import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 import CapabilityCard from './CapabilityCard';
 
-const IMAGE = 'https://media.base44.com/images/public/6a25de119f5f78bb1df59f6d/49a036f85_generated_image.png';
+const IMAGE = '/images/49a036f85_generated_image.png';
 
 const CARDS = [
   { title: 'Vineyard Management', desc: 'Full-season care that maximizes the potential of each site.' },

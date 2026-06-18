@@ -3,7 +3,7 @@ import Eyebrow from '../shared/Eyebrow';
 import PrimaryButton from '../shared/PrimaryButton';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const REALTOR_IMAGE = 'https://media.base44.com/images/public/6a25de119f5f78bb1df59f6d/363255fef_generated_eba6206e.png';
+const REALTOR_IMAGE = '/images/363255fef_generated_eba6206e.png';
 
 export default function RealtorsSection() {
   return (

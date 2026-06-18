@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
-const HERO_IMAGE = 'https://media.base44.com/images/public/6a25de119f5f78bb1df59f6d/738955788_generated_dfe0d494.png';
+const HERO_IMAGE = '/images/738955788_generated_dfe0d494.png';
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);

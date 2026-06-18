@@ -3,7 +3,7 @@ import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 import CapabilityCard from './CapabilityCard';
 
-const IMAGE = 'https://media.base44.com/images/public/6a25de119f5f78bb1df59f6d/7b9f76f3a_generated_image.png';
+const IMAGE = '/images/7b9f76f3a_generated_image.png';
 
 const CARDS = [
   { title: 'Fuel Reduction & Defensible Space', desc: 'Brush clearing, mastication, and mowing that reduce wildfire fuel and create defensible space.' },
