@@ -5,7 +5,7 @@ export default function WaterSlot01() {
     <div className="flex flex-col gap-2">
       <div className="rounded-lg overflow-hidden" style={{ backgroundColor: '#E5E5E5', border: '1px dashed #AAAAAA' }}>
         <img
-          src="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/0f2050e75_ray-batch4-01.jpg"
+          src="/images/0f2050e75_ray-batch4-01.jpg"
           alt="Water"
           className="w-full h-auto object-contain"
         />

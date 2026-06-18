@@ -10,28 +10,28 @@ const SERVICES = [
   {
     anchor: 'drain-cleaning',
     title: 'Drain Cleaning',
-    image: 'https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/c597b734c_generated_d41a40b7.png',
+    image: '/images/c597b734c_generated_d41a40b7.png',
     copy: 'Clogged drains are one of the most common plumbing problems — and one of the most disruptive. Ray Espinoza Plumbing provides professional drain cleaning services for kitchen sinks, bathroom sinks, tubs, and toilets throughout San Luis Obispo County. We also handle sewer line replacement, cleanout installation, and cleanout additions for residential and commercial properties. Whether it is a slow drain or a complete stoppage, Ray responds fast and gets it cleared right.',
     reviewer: { initials: 'E.G.', quote: 'quick to respond' },
   },
   {
     anchor: 'water-line-repairs',
     title: 'Water Line & Plumbing Repairs',
-    image: 'https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/16bc0914a_generated_5a8d9930.png',
+    image: '/images/16bc0914a_generated_5a8d9930.png',
     copy: 'From waterline installs and repairs to faucets, toilets, sinks, angle stops, shower enclosures, re-pipes, and shower valve replacements — Ray Espinoza Plumbing handles the full range of residential and commercial plumbing repair and installation work across SLO County. Every repair is done cleanly and professionally with honest communication from start to finish. Ray shows up on time, does the work right, and leaves the job site clean.',
     reviewer: { initials: 'T.A.', quote: 'top notch quality' },
   },
   {
     anchor: 'gas-line-services',
     title: 'Gas Line Services',
-    image: 'https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/0ecde203f_generated_bdeadd9b.png',
+    image: '/images/0ecde203f_generated_bdeadd9b.png',
     copy: "Gas line work requires precision, experience, and the right licensing. Ray Espinoza Plumbing provides gas line installation, gas line repair, and leak detection for residential and commercial properties throughout San Luis Obispo County. If you suspect a gas leak or need a new gas line installed, don't wait — call Ray. Available 24 hours a day, 7 days a week for gas line emergencies.",
     reviewer: { initials: 'G.C.', quote: 'work and communication top notch' },
   },
   {
     anchor: 'water-heater-installation',
     title: 'Water Heater Installation',
-    image: 'https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/9619e9f95_generated_6996dee3.png',
+    image: '/images/9619e9f95_generated_6996dee3.png',
     copy: 'No hot water is never convenient. Ray Espinoza Plumbing provides fast, professional water heater installation for both standard tank water heaters and tankless water heater systems. Whether your existing water heater has failed or you are upgrading to a more energy-efficient tankless system, Ray responds quickly and gets it done right. Same-day service available when you need it most.',
     reviewer: { initials: 'T.F.', quote: 'worked quickly & efficiently' },
   },
@@ -59,7 +59,7 @@ export default function Services() {
             { label: 'Home', path: '/' },
             { label: 'Services' },
           ]}
-          image="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/60ba2fb3b_generated_455dcb40.png"
+          image="/images/60ba2fb3b_generated_455dcb40.png"
           overlayOpacity={55}
         />
 

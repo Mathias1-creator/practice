@@ -5,7 +5,7 @@ export default function GallerySlot08() {
     <div className="flex flex-col gap-2">
       <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '4 / 3' }}>
         <img
-          src="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/62b87528e_ray-gallery-08.jpg"
+          src="/images/62b87528e_ray-gallery-08.jpg"
           alt="Sewer and Septic work"
           className="w-full h-full object-cover"
         />

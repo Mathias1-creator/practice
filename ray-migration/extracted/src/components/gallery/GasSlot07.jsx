@@ -5,7 +5,7 @@ export default function GasSlot07() {
     <div className="flex flex-col gap-2">
       <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '4 / 3' }}>
         <img
-          src="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/9630f1f86_ray-batch2-071.jpg"
+          src="/images/9630f1f86_ray-batch2-071.jpg"
           alt="Gas Repair and New Install"
           className="w-full h-full object-cover"
         />

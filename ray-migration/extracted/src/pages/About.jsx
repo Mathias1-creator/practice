@@ -58,7 +58,7 @@ export default function About() {
               <div className="rounded-xl overflow-hidden">
                 {/* CLIENT PHOTO SLOT — Ray Espinoza portrait or job site */}
                 <img
-                  src="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/6ede7482d_image0.jpg"
+                  src="/images/6ede7482d_image0.jpg"
                   alt="Ray Espinoza and family"
                   className="w-full h-full object-cover"
                 />

@@ -47,7 +47,7 @@ export default function Gallery() {
           { label: 'Home', path: '/' },
           { label: 'Gallery' },
         ]}
-        image="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/60ba2fb3b_generated_455dcb40.png"
+        image="/images/60ba2fb3b_generated_455dcb40.png"
         overlayOpacity={55}
       />
 

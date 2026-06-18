@@ -5,7 +5,7 @@ export default function WaterSlot13() {
     <div className="flex flex-col gap-2">
       <div className="rounded-lg overflow-hidden" style={{ aspectRatio: '4 / 3' }}>
         <img
-          src="https://media.base44.com/images/public/6a174d91ad108cbaff5bbd34/379481e4b_ray-batch4-13.jpg"
+          src="/images/379481e4b_ray-batch4-13.jpg"
           alt="Water"
           className="w-full h-full object-cover"
         />
