@@ -6,7 +6,7 @@ import WhyMarval from '../components/about/WhyMarval';
 import FooterCTA from '../components/layout/FooterCTA';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 
-const ABOUT_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/ad43ff5cd_generated_6a93ca44.png';
+const ABOUT_IMG = '/images/ad43ff5cd_generated_6a93ca44.png';
 
 const badges = [
   'Licensed C-27 Contractor',

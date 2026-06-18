@@ -3,17 +3,17 @@ import PageHero from '../components/shared/PageHero';
 import ServiceBlock from '../components/services/ServiceBlock';
 import FooterCTA from '../components/layout/FooterCTA';
 
-const LANDSCAPING_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/ce585ed21_generated_image.png';
-const HARDSCAPE_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/8d488b923_generated_image.png';
-const IRRIGATION_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/13ce9e503_generated_image.png';
-const TREE_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/524ae406b_IMG_7931.jpeg';
+const LANDSCAPING_IMG = '/images/ce585ed21_generated_image.png';
+const HARDSCAPE_IMG = '/images/8d488b923_generated_image.png';
+const IRRIGATION_IMG = '/images/13ce9e503_generated_image.png';
+const TREE_IMG = '/images/524ae406b_IMG_7931.jpeg';
 
 const servicesData = [
   {
     id: 'landscaping',
     title: 'Landscaping',
     body: 'Marval Landscaping Services delivers complete residential and commercial landscaping solutions throughout SLO County. From initial design consultations through final installation, we manage every aspect of your outdoor transformation. Our services include full yard design and installation, sod and turf installation, grading and drainage, planting and seasonal color, drought-tolerant landscaping, and ongoing maintenance programs. With 17 years of experience working in the Central Coast climate, we know which plants thrive, which materials last, and how to build landscapes that stay beautiful year after year. Whether you are starting from scratch or refreshing an existing space, Marval brings the expertise and professionalism to get it done right.',
-    image: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/5f555dbc5_IMG_3666.jpg',
+    image: '/images/5f555dbc5_IMG_3666.jpg',
     imageAlt: 'John Deere skid steer grading and excavation',
     ctaText: 'Get a Free Quote',
     bgClass: 'bg-white',
@@ -22,7 +22,7 @@ const servicesData = [
     id: 'hardscape',
     title: 'Hardscape',
     body: 'From custom paver patios to sweeping driveways and structural retaining walls, Marval Landscaping Services handles the complete hardscape scope for residential and commercial projects throughout SLO County. We work with a wide range of materials including concrete pavers, natural stone, flagstone, and block to create outdoor spaces that are as durable as they are beautiful. Every hardscape project is planned carefully, built to grade, and finished with precision. We coordinate directly with homeowners and contractors to keep projects on schedule, on budget, and built to last. If you can dream it, we can build it.',
-    image: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/62fe19a45_IMG_6628.jpg',
+    image: '/images/62fe19a45_IMG_6628.jpg',
     imageAlt: 'Custom paver driveway and retaining wall',
     ctaText: 'Get a Free Quote',
     reversed: true,

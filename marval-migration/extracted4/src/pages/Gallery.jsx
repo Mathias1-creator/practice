@@ -6,18 +6,18 @@ import FooterCTA from '../components/layout/FooterCTA';
 import { Link } from 'react-router-dom';
 
 const galleryImages = [
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/6339c924b_IMG_1686.webp', label: 'Paver Patio & Fire Pit', category: 'Hardscape' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/75f168bf3_IMG_0303.webp', label: 'Residential Front Yard', category: 'Landscaping' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/acc134dcb_IMG_0461.webp', label: 'Retaining Wall Construction', category: 'Hardscape' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/880292ad4_IMG_1654.webp', label: 'Garden Path & Archway', category: 'Landscaping' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/b28d74ff3_IMG_1656-2.webp', label: 'Stepping Stone Pathway', category: 'Hardscape' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/020fb1b59_IMG_1658.webp', label: 'Backyard Planting Design', category: 'Landscaping' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/c4f5f1c6c_IMG_1061-2.webp', label: 'Artificial Turf Installation', category: 'Landscaping' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/b3895d277_IMG_1104-1.webp', label: 'Curb Appeal Landscaping', category: 'Landscaping' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/e36c76eec_IMG_0479-768x1024-2.webp', label: 'Retaining Wall — Large Scale', category: 'Hardscape' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/e6737f9ea_IMG_1122.webp', label: 'Planting & Rose Garden', category: 'Planting' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/5f1529e52_IMG_1241-2.webp', label: 'Vertical Planter Wall', category: 'Planting' },
-  { src: 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/5741b143c_IMG_1037-1.webp', label: 'Drought-Tolerant Yard', category: 'Landscaping' },
+  { src: '/images/6339c924b_IMG_1686.webp', label: 'Paver Patio & Fire Pit', category: 'Hardscape' },
+  { src: '/images/75f168bf3_IMG_0303.webp', label: 'Residential Front Yard', category: 'Landscaping' },
+  { src: '/images/acc134dcb_IMG_0461.webp', label: 'Retaining Wall Construction', category: 'Hardscape' },
+  { src: '/images/880292ad4_IMG_1654.webp', label: 'Garden Path & Archway', category: 'Landscaping' },
+  { src: '/images/b28d74ff3_IMG_1656-2.webp', label: 'Stepping Stone Pathway', category: 'Hardscape' },
+  { src: '/images/020fb1b59_IMG_1658.webp', label: 'Backyard Planting Design', category: 'Landscaping' },
+  { src: '/images/c4f5f1c6c_IMG_1061-2.webp', label: 'Artificial Turf Installation', category: 'Landscaping' },
+  { src: '/images/b3895d277_IMG_1104-1.webp', label: 'Curb Appeal Landscaping', category: 'Landscaping' },
+  { src: '/images/e36c76eec_IMG_0479-768x1024-2.webp', label: 'Retaining Wall — Large Scale', category: 'Hardscape' },
+  { src: '/images/e6737f9ea_IMG_1122.webp', label: 'Planting & Rose Garden', category: 'Planting' },
+  { src: '/images/5f1529e52_IMG_1241-2.webp', label: 'Vertical Planter Wall', category: 'Planting' },
+  { src: '/images/5741b143c_IMG_1037-1.webp', label: 'Drought-Tolerant Yard', category: 'Landscaping' },
 ];
 
 const categories = ['All', 'Landscaping', 'Hardscape', 'Planting'];
