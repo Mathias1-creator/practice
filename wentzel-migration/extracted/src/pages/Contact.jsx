@@ -1,7 +1,6 @@
 import React from 'react';
 import PageHeader from '../components/shared/PageHeader';
 import ContactInfo from '../components/contact/ContactInfo';
-import ContactForm from '../components/contact/ContactForm';
 import FAQSection from '../components/contact/FAQSection';
 import AnimateInView from '../components/shared/AnimateInView';
 
@@ -20,7 +19,24 @@ export default function Contact() {
               <ContactInfo />
             </AnimateInView>
             <AnimateInView delay={0.15}>
-              <ContactForm />
+              <div className="w-full">
+                <iframe
+                  src="https://tally.so/embed/449B7d?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  loading="lazy"
+                  width="100%"
+                  height="500"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Contact Form"
+                  className="w-full min-h-[500px]"
+                  onLoad={() => {
+                    const script = document.createElement('script');
+                    script.src = 'https://tally.so/widgets/embed.js';
+                    document.body.appendChild(script);
+                  }}
+                />
+              </div>
             </AnimateInView>
           </div>
         </div>
