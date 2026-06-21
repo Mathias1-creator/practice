@@ -43,7 +43,7 @@ export default function ServiceDetail({ id, image, title, description, bullets, 
                 ))}
               </ul>
               <Link
-                to="/quote"
+                to="/get-a-quote"
                 className="inline-flex items-center gap-2 bg-[#2E7D32] hover:bg-[#1B5E20] text-white px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105"
               >
                 Request a Quote
