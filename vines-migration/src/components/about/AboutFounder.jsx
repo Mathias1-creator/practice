@@ -2,7 +2,7 @@ import React from 'react';
 import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const FOUNDER_IMAGE = '/images/4d4e14ce2_Screenshot2026-06-08at22914PM.png';
+const FOUNDER_IMAGE = '/images/IMG_1258.jpg';
 
 export default function AboutFounder() {
   return (
