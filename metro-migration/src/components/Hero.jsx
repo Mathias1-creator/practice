@@ -7,7 +7,7 @@ export default function Hero() {
       style={{
         height: "90vh",
         minHeight: "600px",
-        background: "linear-gradient(135deg, #0E1012 0%, #1C1F22 50%, #0E1012 100%)",
+        background: "linear-gradient(to right, #0E1012 0%, #0E1012 30%, #1e2327 60%, #2a3038 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 w-full">
