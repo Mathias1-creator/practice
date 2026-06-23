@@ -1,6 +1,6 @@
 import React from "react";
 
-const HERO_IMAGE = "https://static.base44.com/m-lrgcb3yqb/img_8719e01cd210.png";
+const HERO_IMAGE = "/images/hero-pipes.avif";
 
 export default function Hero() {
   return (
