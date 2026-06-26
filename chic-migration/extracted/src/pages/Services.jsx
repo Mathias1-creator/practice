@@ -8,9 +8,9 @@ import ServicesHero from '../components/services/ServicesHero';
 import ServiceBlock from '../components/services/ServiceBlock';
 import AdditionalServices from '../components/services/AdditionalServices';
 
-const maintenanceImg = '/images/21682f952_generated_72cb00a3.png';
-const installationsImg = '/images/c628358d8_generated_871453d1.png';
-const cleanupsImg = '/images/9e5857660_generated_1f9f3a68.png';
+const maintenanceImg = '/images/21682f952_generated_72cb00a3.jpg';
+const installationsImg = '/images/c628358d8_generated_871453d1.jpg';
+const cleanupsImg = '/images/9e5857660_generated_1f9f3a68.jpg';
 
 const serviceData = [
   {

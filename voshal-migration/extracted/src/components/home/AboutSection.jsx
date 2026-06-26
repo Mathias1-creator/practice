@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useScrollAnimation from '../shared/useScrollAnimation';
 
-const IMG = '/images/663834861_Screenshot2026-04-30at112435AM.png';
+const IMG = '/images/663834861_Screenshot2026-04-30at112435AM.jpg';
 
 export default function AboutSection() {
   const [ref, isVisible] = useScrollAnimation();

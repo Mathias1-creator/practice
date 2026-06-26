@@ -4,44 +4,44 @@ import FooterCTA from '../components/shared/FooterCTA';
 
 const GALLERY_IMAGES = [
   {
-    src: '/images/825d08484_Screenshot2026-04-30at112518AM.png',
+    src: '/images/825d08484_Screenshot2026-04-30at112518AM.jpg',
     alt: '',
   },
   {
-    src: '/images/6e6da92b0_Screenshot2026-04-30at113526AM.png',
+    src: '/images/6e6da92b0_Screenshot2026-04-30at113526AM.jpg',
     alt: '',
   },
   {
-    src: '/images/5bd3e1193_Screenshot2026-04-30at12734PM.png',
+    src: '/images/5bd3e1193_Screenshot2026-04-30at12734PM.jpg',
     alt: '',
   },
   {
-    src: '/images/23a31bf47_Screenshot2026-04-30at12721PM.png',
+    src: '/images/23a31bf47_Screenshot2026-04-30at12721PM.jpg',
     alt: '',
   },
   {
-    src: '/images/5824e0c3c_Screenshot2026-04-30at12708PM.png',
+    src: '/images/5824e0c3c_Screenshot2026-04-30at12708PM.jpg',
     alt: '',
   },
   {
-    src: '/images/beb93cfa3_Screenshot2026-04-30at12645PM.png',
+    src: '/images/beb93cfa3_Screenshot2026-04-30at12645PM.jpg',
     alt: '',
   },
   {
-    src: '/images/69882d78a_Screenshot2026-04-30at12542PM.png',
+    src: '/images/69882d78a_Screenshot2026-04-30at12542PM.jpg',
     alt: '',
   },
   {
-    src: '/images/adb237bfa_Screenshot2026-04-30at102014AM.png',
+    src: '/images/adb237bfa_Screenshot2026-04-30at102014AM.jpg',
     alt: '',
   },
   {
-    src: '/images/be1aabeca_Screenshot2026-04-30at101956AM.png',
+    src: '/images/be1aabeca_Screenshot2026-04-30at101956AM.jpg',
     alt: '',
   },
 
   {
-    src: '/images/94bb8abb8_Screenshot2026-04-30at13841PM.png',
+    src: '/images/94bb8abb8_Screenshot2026-04-30at13841PM.jpg',
     alt: '',
   },
   {
@@ -79,7 +79,7 @@ const GALLERY_IMAGES = [
     alt: '',
   },
   {
-    src: '/images/34cf75825_Screenshot2026-05-09at100236PM.png',
+    src: '/images/34cf75825_Screenshot2026-05-09at100236PM.jpg',
     alt: '',
   },
   {

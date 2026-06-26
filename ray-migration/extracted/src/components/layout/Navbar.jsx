@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center shrink-0">
               <img
-                src="/images/f2bbb9249_Screenshot2026-05-28at25122PM.png"
+                src="/images/f2bbb9249_Screenshot2026-05-28at25122PM.jpg"
                 alt="Ray Espinoza Plumbing"
                 style={{ height: '90px', width: 'auto', objectFit: 'contain' }}
               />

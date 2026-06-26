@@ -5,7 +5,7 @@ import useScrollAnimation from '../components/shared/useScrollAnimation';
 import FooterCTA from '../components/shared/FooterCTA';
 
 const IMG_TRUCKS = '/images/436dfd649_IMG_39101.jpg';
-const IMG_SLO = '/images/60d89a25a_Voshal_logo_white_bg.png';
+const IMG_SLO = '/images/60d89a25a_Voshal_logo_white_bg.jpg';
 
 function WhyCard({ icon: Icon, heading, text, delay }) {
   const [ref, isVisible] = useScrollAnimation();

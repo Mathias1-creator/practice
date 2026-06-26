@@ -32,7 +32,7 @@ export default function About() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="/images/6d6ac3434_IMG_7583.png"
+                    src="/images/6d6ac3434_IMG_7583.jpg"
                     alt="The Wentzel Family"
                     className="w-full h-auto object-cover"
                   />
@@ -40,7 +40,7 @@ export default function About() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="rounded-xl overflow-hidden shadow">
                     <img
-                      src="/images/9bfd3ce8d_PastedGraphic1.png"
+                      src="/images/9bfd3ce8d_PastedGraphic1.jpg"
                       alt="Andrew Wentzel"
                       className="w-full h-full object-cover"
                     />

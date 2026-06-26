@@ -5,7 +5,7 @@ import FooterCTA from '../components/shared/FooterCTA';
 
 const IMG_NEW_CONST_1 = '/images/a606fef60_21B1EBB2-7A0E-4A4E-9A9A-33F95CB0F00B.jpg';
 const IMG_NEW_CONST_2 = '/images/fc44f72d2_IMG_24743.jpg';
-const IMG_SUBWAY = '/images/825d08484_Screenshot2026-04-30at112518AM.png';
+const IMG_SUBWAY = '/images/825d08484_Screenshot2026-04-30at112518AM.jpg';
 const IMG_TANKLESS = '/images/773f1a0cd_IMG_0505.jpg';
 const IMG_REPAIR_1 = '/images/c624b8307_IMG_75833.jpg';
 const IMG_REPAIR_2 = '/images/94ec65b63_IMG_6812.jpg';

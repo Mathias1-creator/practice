@@ -5,15 +5,15 @@ import useScrollAnimation from '../shared/useScrollAnimation';
 
 const PREVIEW_IMAGES = [
   {
-    src: '/images/6b0b839c2_Screenshot2026-05-09at100236PM.png',
+    src: '/images/6b0b839c2_Screenshot2026-05-09at100236PM.jpg',
     alt: 'Luxury bathroom with patterned tile wall, freestanding tub, and gold fixtures',
   },
   {
-    src: '/images/30e450a38_Screenshot2026-04-30at101956AM.png',
+    src: '/images/30e450a38_Screenshot2026-04-30at101956AM.jpg',
     alt: 'White subway tile shower with matte black fixtures',
   },
   {
-    src: '/images/b19dfee6b_Screenshot2026-04-30at102040AM.png',
+    src: '/images/b19dfee6b_Screenshot2026-04-30at102040AM.jpg',
     alt: 'Rain head shower detail with wood-look tile wall',
   },
 ];

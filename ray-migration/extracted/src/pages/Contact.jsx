@@ -24,7 +24,7 @@ export default function Contact() {
           { label: 'Home', path: '/' },
           { label: 'Contact' },
         ]}
-        image="/images/60ba2fb3b_generated_455dcb40.png"
+        image="/images/60ba2fb3b_generated_455dcb40.jpg"
         overlayOpacity={55}
       />
 

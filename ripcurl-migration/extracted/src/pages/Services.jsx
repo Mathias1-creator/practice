@@ -4,10 +4,10 @@ import ServiceBlock from '../components/services/ServiceBlock';
 import ScrollReveal from '../components/shared/ScrollReveal';
 
 // Image 2 — Softscape colorful site plan (Straits Side client deliverable)
-const DESIGN_IMAGE = '/images/8ff80c98d_Screenshot2026-05-16at100126AM.png';
-const IRRIGATION_IMAGE = '/images/d6be0e94c_generated_10c41835.png';
-const RESTORATION_IMAGE = '/images/9a259f0e5_generated_21e3b6e7.png';
-const IRRIGATION_SCHEDULE_IMAGE = '/images/bb468d0ba_Screenshot2026-06-01at102608AM.png';
+const DESIGN_IMAGE = '/images/8ff80c98d_Screenshot2026-05-16at100126AM.jpg';
+const IRRIGATION_IMAGE = '/images/d6be0e94c_generated_10c41835.jpg';
+const RESTORATION_IMAGE = '/images/9a259f0e5_generated_21e3b6e7.jpg';
+const IRRIGATION_SCHEDULE_IMAGE = '/images/bb468d0ba_Screenshot2026-06-01at102608AM.jpg';
 
 export default function Services() {
   return (

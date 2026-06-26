@@ -42,7 +42,7 @@ const mainServices = [
   {
     id: 'lawn-care',
     title: 'Lawn Care',
-    image: '/images/89f5d2fc9_generated_8455873d.png',
+    image: '/images/89f5d2fc9_generated_8455873d.jpg',
     description: 'A healthy lawn starts with the right care plan. From routine maintenance to full lawn renovation, we provide the expertise and hands-on service to keep your turf looking its best year-round.',
     bullets: [
       'Lawn maintenance & mowing',
@@ -98,7 +98,7 @@ function SportsFieldsSection({ reverse }) {
           {/* Image */}
           <AnimateInView className={reverse ? 'lg:order-2' : ''}>
             <div className="rounded-2xl overflow-hidden shadow-lg aspect-video">
-              <img src="/images/ac22f3b07_generated_e50ed8ed.png" alt="Sports Fields & Parks" className="w-full h-full object-cover" />
+              <img src="/images/ac22f3b07_generated_e50ed8ed.jpg" alt="Sports Fields & Parks" className="w-full h-full object-cover" />
             </div>
           </AnimateInView>
 

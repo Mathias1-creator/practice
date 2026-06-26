@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const HERO_IMAGE = '/images/95b619e3b_Screenshot2026-06-02at91751PM.png';
+const HERO_IMAGE = '/images/95b619e3b_Screenshot2026-06-02at91751PM.jpg';
 
 export default function HeroSection() {
   return (

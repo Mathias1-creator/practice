@@ -4,7 +4,7 @@ import ScrollReveal from '../components/shared/ScrollReveal';
 import StatsCounter from '../components/about/StatsCounter';
 import ApproachCards from '../components/about/ApproachCards';
 
-const ABOUT_IMAGE = '/images/c44cd8952_generated_26c40d4d.png';
+const ABOUT_IMAGE = '/images/c44cd8952_generated_26c40d4d.jpg';
 
 export default function About() {
   return (

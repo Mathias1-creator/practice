@@ -6,22 +6,22 @@ const PROJECTS = [
   {
     name: 'Montecito Estate Garden',
     details: '29 acres · French-inspired gardens · Mediterranean plant palette · Chaparral & oak woodland restoration',
-    image: '/images/755c8580e_generated_a32881be.png',
+    image: '/images/755c8580e_generated_a32881be.jpg',
   },
   {
     name: 'Rock Cobble Farm',
     details: '1,200 acres · Landscape design & installation · Greenhouse management · Capital projects oversight',
-    image: '/images/25f85907b_generated_98119e97.png',
+    image: '/images/25f85907b_generated_98119e97.jpg',
   },
   {
     name: 'Quaker Hill Native Plant Garden',
     details: '200 acres · Native woodland management · Large specimen tree installation · 7-person crew coordination',
-    image: '/images/60cdb1323_generated_b1c87043.png',
+    image: '/images/60cdb1323_generated_b1c87043.jpg',
   },
   {
     name: 'Meadowbrook Farm',
     details: '20 acres · Pennsylvania Horticultural Society · Philadelphia Flower Show displays',
-    image: '/images/b90835902_generated_ac7206a8.png',
+    image: '/images/b90835902_generated_ac7206a8.jpg',
   },
 ];
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 
-const HERO_BG = '/images/c62e3d0e5_Screenshot2026-05-09at100236PM.png';
+const HERO_BG = '/images/c62e3d0e5_Screenshot2026-05-09at100236PM.jpg';
 
 export default function Hero() {
   return (

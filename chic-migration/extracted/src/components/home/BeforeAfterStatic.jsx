@@ -1,8 +1,8 @@
 import React from 'react';
 import SectionLabel from '../SectionLabel';
 
-const beforeImg = '/images/9fcebe998_4059714950207399370.png';
-const afterImg = '/images/c3e01190e_4879523406557540844.png';
+const beforeImg = '/images/9fcebe998_4059714950207399370.jpg';
+const afterImg = '/images/c3e01190e_4879523406557540844.jpg';
 
 export default function BeforeAfterStatic() {
   return (
@@ -43,7 +43,7 @@ export default function BeforeAfterStatic() {
 
           {/* After */}
           <div className="relative overflow-hidden group" style={{ borderRadius: '14px', height: 'clamp(300px, 40vw, 500px)', background: '#1e1e1e' }}>
-            <img src="/images/631d37b8b_image.png"
+            <img src="/images/631d37b8b_image.jpg"
 
             alt="After landscaping"
             className="w-full h-full transition-transform duration-700 group-hover:scale-105"
@@ -72,7 +72,7 @@ export default function BeforeAfterStatic() {
         {/* Second transformation - full image with built-in labels */}
         <div className="max-w-5xl mx-auto mt-6 overflow-hidden" style={{ borderRadius: '14px' }}>
           <img
-            src="/images/297748823_1523.png"
+            src="/images/297748823_1523.jpg"
             alt="Before and after landscaping transformation"
             className="w-full h-auto object-cover" />
           
@@ -81,7 +81,7 @@ export default function BeforeAfterStatic() {
         {/* Third transformation - vertical before/after */}
         <div className="max-w-2xl mx-auto mt-6 overflow-hidden" style={{ borderRadius: '14px' }}>
           <img
-            src="/images/6f5cd9db2_1206.png"
+            src="/images/6f5cd9db2_1206.jpg"
             alt="Before and after landscaping transformation"
             className="w-full h-auto object-cover" />
           

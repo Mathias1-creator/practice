@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const heroImage = '/images/3b8b9aa0c_generated_d095e00d.png';
+const heroImage = '/images/3b8b9aa0c_generated_d095e00d.jpg';
 
 const phrases = [
   { first: 'Your Garden,', last: 'Elevated.' },

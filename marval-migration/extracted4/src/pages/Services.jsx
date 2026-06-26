@@ -3,9 +3,9 @@ import PageHero from '../components/shared/PageHero';
 import ServiceBlock from '../components/services/ServiceBlock';
 import FooterCTA from '../components/layout/FooterCTA';
 
-const LANDSCAPING_IMG = '/images/ce585ed21_generated_image.png';
-const HARDSCAPE_IMG = '/images/8d488b923_generated_image.png';
-const IRRIGATION_IMG = '/images/13ce9e503_generated_image.png';
+const LANDSCAPING_IMG = '/images/ce585ed21_generated_image.jpg';
+const HARDSCAPE_IMG = '/images/8d488b923_generated_image.jpg';
+const IRRIGATION_IMG = '/images/13ce9e503_generated_image.jpg';
 const TREE_IMG = '/images/524ae406b_IMG_7931.jpeg';
 
 const servicesData = [

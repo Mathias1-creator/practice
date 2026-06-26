@@ -1,39 +1,35 @@
-**Welcome to your Base44 project** 
+# Chic — Website Source Code
 
-**About**
+This is the complete, editable source code for the Chic website. It is a
+standard **React + Vite** project with **Tailwind CSS**. Any web developer can
+run, edit, and deploy it. There are no external account dependencies.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Requirements
+- [Node.js](https://nodejs.org/) version 18 or newer (includes `npm`)
 
-This project contains everything you need to run your app locally.
-
-**Edit the code in your local development environment**
-
-Any change pushed to the repo will also be reflected in the Base44 Builder.
-
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
+## Getting Started
+```bash
+npm install      # install dependencies (run once)
+npm run dev      # start local dev server (live preview while editing)
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+The dev server prints a local URL (usually http://localhost:5173). Edits to
+files in `src/` update live.
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+## Editing
+- `src/pages/`      — each page of the site
+- `src/components/` — reusable pieces (header, footer, sections, etc.)
+- `src/index.css`   — global styles
+- `public/images/`  — all images used on the site
+
+## Building & Deploying
+```bash
+npm run build    # generates the dist/ folder = the finished static site
 ```
+Host the contents of `dist/` anywhere static — Netlify (drag the folder),
+Vercel, Cloudflare Pages, GitHub Pages, etc. The file `public/_redirects`
+(`/* /index.html 200`) is included so page routing works on Netlify — keep it.
 
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+## Notes
+- All images are local to this project; nothing loads from an external account.
+- `node_modules` and `dist` are not included on purpose — they are regenerated
+  by the commands above. This keeps the download small.

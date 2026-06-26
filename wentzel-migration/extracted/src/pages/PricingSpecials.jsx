@@ -222,7 +222,7 @@ export default function PricingSpecials() {
           <AnimateInView delay={0.1}>
             <div className="rounded-xl overflow-hidden mb-10 shadow-lg">
               <img
-                src="/images/911123e82_DaesvourlawnneedheloAeratereiuvenateandsaveonwater.png"
+                src="/images/911123e82_DaesvourlawnneedheloAeratereiuvenateandsaveonwater.jpg"
                 alt="Aeration Brochure"
                 className="w-full h-auto"
               />

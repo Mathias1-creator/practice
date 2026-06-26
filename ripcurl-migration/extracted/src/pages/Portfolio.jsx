@@ -17,7 +17,7 @@ const OTHER_PROJECTS = [
       'Chaparral & oak woodland restoration',
       'Smart irrigation implementation',
     ],
-    image: '/images/755c8580e_generated_a32881be.png',
+    image: '/images/755c8580e_generated_a32881be.jpg',
     imageAlt: 'Montecito Estate formal gardens',
   },
   {
@@ -31,7 +31,7 @@ const OTHER_PROJECTS = [
       'Greenhouse management',
       'Comprehensive financial management',
     ],
-    image: '/images/25f85907b_generated_98119e97.png',
+    image: '/images/25f85907b_generated_98119e97.jpg',
     imageAlt: 'Rock Cobble Farm expansive ranch landscape',
   },
   {
@@ -45,7 +45,7 @@ const OTHER_PROJECTS = [
       '7-person crew coordination',
       'Garden & natural areas planting',
     ],
-    image: '/images/60cdb1323_generated_b1c87043.png',
+    image: '/images/60cdb1323_generated_b1c87043.jpg',
     imageAlt: 'Quaker Hill native woodland garden',
   },
   {
@@ -59,7 +59,7 @@ const OTHER_PROJECTS = [
       'Philadelphia Flower Show displays',
       'Plant material forcing & display',
     ],
-    image: '/images/b90835902_generated_ac7206a8.png',
+    image: '/images/b90835902_generated_ac7206a8.jpg',
     imageAlt: 'Meadowbrook Farm formal perennial gardens',
   },
 ];
@@ -146,7 +146,7 @@ export default function Portfolio() {
           <ScrollReveal delay={0.15}>
             <div className="overflow-hidden rounded-sm shadow-2xl">
               <img
-                src="/images/8b969a4bb_Screenshot2026-06-01at112103AM.png"
+                src="/images/8b969a4bb_Screenshot2026-06-01at112103AM.jpg"
                 alt="Avo Garden mood board"
                 className="w-full object-cover"
               />

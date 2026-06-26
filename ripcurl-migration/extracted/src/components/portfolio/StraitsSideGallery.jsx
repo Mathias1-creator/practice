@@ -4,47 +4,47 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const IMAGES = [
   {
-    src: '/images/4d9a77d18_Screenshot2026-06-01at113525AM.png',
+    src: '/images/4d9a77d18_Screenshot2026-06-01at113525AM.jpg',
     label: 'Cover Sheet & Materials Plan',
   },
   {
-    src: '/images/30a03b388_Screenshot2026-06-01at113531AM.png',
+    src: '/images/30a03b388_Screenshot2026-06-01at113531AM.jpg',
     label: 'Site Softscape Reference Plan',
   },
   {
-    src: '/images/8dcb1bb84_Screenshot2026-06-01at113536AM.png',
+    src: '/images/8dcb1bb84_Screenshot2026-06-01at113536AM.jpg',
     label: 'Plant Key Plan',
   },
   {
-    src: '/images/67e7dfbcb_Screenshot2026-06-01at113541AM.png',
+    src: '/images/67e7dfbcb_Screenshot2026-06-01at113541AM.jpg',
     label: 'Trees Plan',
   },
   {
-    src: '/images/0b5f9eb39_Screenshot2026-06-01at113547AM.png',
+    src: '/images/0b5f9eb39_Screenshot2026-06-01at113547AM.jpg',
     label: 'Shrubs Plan',
   },
   {
-    src: '/images/55df91f43_Screenshot2026-06-01at113553AM.png',
+    src: '/images/55df91f43_Screenshot2026-06-01at113553AM.jpg',
     label: 'Perennials Plan',
   },
   {
-    src: '/images/a7777079f_Screenshot2026-06-01at113558AM.png',
+    src: '/images/a7777079f_Screenshot2026-06-01at113558AM.jpg',
     label: 'Bulbs Plan',
   },
   {
-    src: '/images/bd96351bf_Screenshot2026-06-01at113603AM.png',
+    src: '/images/bd96351bf_Screenshot2026-06-01at113603AM.jpg',
     label: 'Grasses & Grass-Like Plants',
   },
   {
-    src: '/images/28e42e89d_Screenshot2026-06-01at113608AM.png',
+    src: '/images/28e42e89d_Screenshot2026-06-01at113608AM.jpg',
     label: 'Softscape Key',
   },
   {
-    src: '/images/d20ccc7be_Screenshot2026-06-01at113614AM.png',
+    src: '/images/d20ccc7be_Screenshot2026-06-01at113614AM.jpg',
     label: 'Front Perspectives',
   },
   {
-    src: '/images/d866e89af_Screenshot2026-06-01at113620AM.png',
+    src: '/images/d866e89af_Screenshot2026-06-01at113620AM.jpg',
     label: 'Rear Perspectives',
   },
 ];

@@ -8,7 +8,7 @@ import Testimonials from '../components/home/Testimonials';
 import ServiceArea from '../components/home/ServiceArea';
 import CTABand from '../components/shared/CTABand';
 
-const HERO_IMAGE = '/images/91b0f5b2e_generated_image.png';
+const HERO_IMAGE = '/images/91b0f5b2e_generated_image.jpg';
 
 const GALLERY_IMAGES = [
   { url: '/images/2487d5d2b_IMG_8878.jpg', label: 'Backyard Sprinklers Running' },

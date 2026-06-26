@@ -51,7 +51,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 shrink-0">
               <img
-                src="/images/7585689fd_Marvallandscaping_logo.png"
+                src="/images/7585689fd_Marvallandscaping_logo.jpg"
                 alt="Marval Landscaping Logo"
                 className="w-12 h-12 object-contain"
               />

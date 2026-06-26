@@ -2,8 +2,8 @@ import React, { useState, useRef, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import SectionLabel from '../SectionLabel';
 
-const beforeImg = '/images/7ce47eb97_generated_abee0a1f.png';
-const afterImg = '/images/6ecf401ff_generated_d64aa3be.png';
+const beforeImg = '/images/7ce47eb97_generated_abee0a1f.jpg';
+const afterImg = '/images/6ecf401ff_generated_d64aa3be.jpg';
 
 export default function BeforeAfterSlider() {
   const [position, setPosition] = useState(50);

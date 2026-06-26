@@ -4,9 +4,9 @@ import ScrollReveal from '../shared/ScrollReveal';
 import SectionLabel from '../shared/SectionLabel';
 
 // Image 1 — Front right perspective render (Straits Side)
-const RENDER_RIGHT = '/images/e96e97beb_Screenshot2026-05-16at100105AM.png';
+const RENDER_RIGHT = '/images/e96e97beb_Screenshot2026-05-16at100105AM.jpg';
 // Image 2 — Softscape reference plan (Straits Side)
-const SOFTSCAPE_PLAN = '/images/8ff80c98d_Screenshot2026-05-16at100126AM.png';
+const SOFTSCAPE_PLAN = '/images/8ff80c98d_Screenshot2026-05-16at100126AM.jpg';
 
 export default function DesignShowcase() {
   return (
@@ -28,7 +28,7 @@ export default function DesignShowcase() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
             {/* Front right perspective render */}
             <div className="aspect-[4/3] overflow-hidden rounded-sm shadow-xl">
-              <img src="/images/f65e9ac0e_Screenshot2026-05-16at100143AM.png"
+              <img src="/images/f65e9ac0e_Screenshot2026-05-16at100143AM.jpg"
 
               alt="Straits Side — front right perspective 3D render"
               className="w-full h-full object-cover object-[center_35%] hover:scale-105 transition-transform duration-700" />

@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/images/799ee46e4_generated_2902d3c9.png"
+          src="/images/799ee46e4_generated_2902d3c9.jpg"
           alt="Ray Espinoza Plumbing - Professional plumber on job site"
           className="w-full h-full object-cover"
         />

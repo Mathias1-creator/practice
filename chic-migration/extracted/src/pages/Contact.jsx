@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import FloatingCallButton from '../components/FloatingCallButton';
 import SectionLabel from '../components/SectionLabel';
 
-const contactHero = '/images/619d202d4_generated_8cd139e3.png';
+const contactHero = '/images/619d202d4_generated_8cd139e3.jpg';
 
 export default function Contact() {
 

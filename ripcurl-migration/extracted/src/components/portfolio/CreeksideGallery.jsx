@@ -4,43 +4,43 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const IMAGES = [
   {
-    src: '/images/447eb5bca_Screenshot2026-06-01at105236AM.png',
+    src: '/images/447eb5bca_Screenshot2026-06-01at105236AM.jpg',
     label: 'Planting Concept Overview',
   },
   {
-    src: '/images/df3d9ff29_Screenshot2026-06-01at105246AM.png',
+    src: '/images/df3d9ff29_Screenshot2026-06-01at105246AM.jpg',
     label: 'Site Hardscape Reference Plan',
   },
   {
-    src: '/images/e97d34280_Screenshot2026-06-01at105318AM.png',
+    src: '/images/e97d34280_Screenshot2026-06-01at105318AM.jpg',
     label: 'Site Softscape Reference Plan',
   },
   {
-    src: '/images/ac348a478_Screenshot2026-06-01at105328AM.png',
+    src: '/images/ac348a478_Screenshot2026-06-01at105328AM.jpg',
     label: '3D Perspective Renders',
   },
   {
-    src: '/images/c05f4c43c_Screenshot2026-06-01at105339AM.png',
+    src: '/images/c05f4c43c_Screenshot2026-06-01at105339AM.jpg',
     label: 'Conceptual Irrigation Zone Layout',
   },
   {
-    src: '/images/ab0ea7e27_Screenshot2026-06-01at105352AM.png',
+    src: '/images/ab0ea7e27_Screenshot2026-06-01at105352AM.jpg',
     label: 'Irrigation As-Built Plan',
   },
   {
-    src: '/images/09504b3b0_Screenshot2026-06-01at105401AM.png',
+    src: '/images/09504b3b0_Screenshot2026-06-01at105401AM.jpg',
     label: 'Tree Overview Plan',
   },
   {
-    src: '/images/c583a0112_Screenshot2026-06-01at105409AM.png',
+    src: '/images/c583a0112_Screenshot2026-06-01at105409AM.jpg',
     label: 'Tree Planting Perspectives',
   },
   {
-    src: '/images/83b959928_Screenshot2026-06-01at105418AM.png',
+    src: '/images/83b959928_Screenshot2026-06-01at105418AM.jpg',
     label: 'Under-Oak Planting Detail',
   },
   {
-    src: '/images/fa51a4169_Screenshot2026-06-01at105426AM.png',
+    src: '/images/fa51a4169_Screenshot2026-06-01at105426AM.jpg',
     label: 'Pool Planting Detail',
   },
 ];

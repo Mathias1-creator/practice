@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Phone, Mail, Clock, ExternalLink } from 'lucide-react';
 
-const LOGO_URL = "/images/e2fdd2dea_AndresBravo805621-4093-1.png";
+const LOGO_URL = "/images/e2fdd2dea_AndresBravo805621-4093-1.jpg";
 
 export default function Footer() {
   return (

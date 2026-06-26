@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Leaf, Flower2, Sparkles, ArrowRight } from 'lucide-react';
 import SectionLabel from '../SectionLabel';
 
-const maintenanceImg = '/images/21682f952_generated_72cb00a3.png';
-const installationsImg = '/images/c628358d8_generated_871453d1.png';
-const cleanupsImg = '/images/9e5857660_generated_1f9f3a68.png';
+const maintenanceImg = '/images/21682f952_generated_72cb00a3.jpg';
+const installationsImg = '/images/c628358d8_generated_871453d1.jpg';
+const cleanupsImg = '/images/9e5857660_generated_1f9f3a68.jpg';
 
 
 const services = [

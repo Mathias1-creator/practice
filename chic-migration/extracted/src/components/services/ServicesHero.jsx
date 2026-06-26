@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const heroImg = '/images/673afb483_generated_0ecdd9bd.png';
+const heroImg = '/images/673afb483_generated_0ecdd9bd.jpg';
 
 export default function ServicesHero() {
   return (
