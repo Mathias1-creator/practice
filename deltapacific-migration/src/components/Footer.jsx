@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Wordmark from "./Wordmark";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -26,7 +25,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Column 1 - Wordmark & tagline */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Wordmark variant="dark" />
+            <span className="font-heading font-extrabold text-xl text-white tracking-wide">
+              DELTA PACIFIC PLUMBING
+            </span>
             <p
               className="font-body text-sm mt-4 leading-relaxed max-w-xs"
               style={{ color: "rgba(255,255,255,0.7)" }}

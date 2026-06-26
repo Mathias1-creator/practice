@@ -45,10 +45,10 @@ export default function Header() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-24">
             {/* Wordmark */}
             <Link to="/" className="flex-shrink-0">
-              <Wordmark variant="light" />
+              <Wordmark />
             </Link>
 
             {/* Desktop Nav */}
@@ -150,7 +150,7 @@ export default function Header() {
       </div>
 
       {/* Spacer */}
-      <div className="h-16 md:h-20" />
+      <div className="h-20 md:h-24" />
     </>
   );
 }

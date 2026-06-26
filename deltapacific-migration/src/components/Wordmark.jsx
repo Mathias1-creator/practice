@@ -1,15 +1,9 @@
-export default function Wordmark({ variant = "light" }) {
-  const isDark = variant === "dark";
-
+export default function Wordmark() {
   return (
     <img
       src={`${import.meta.env.BASE_URL}images/logo.png`}
       alt="Delta Pacific Plumbing Inc."
-      style={{
-        height: "48px",
-        width: "auto",
-        filter: isDark ? "brightness(0) invert(1)" : "none",
-      }}
+      style={{ height: "72px", width: "auto" }}
     />
   );
 }
