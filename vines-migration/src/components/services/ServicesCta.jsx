@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const CTA_IMAGE = '/images/eb9bb7e62_generated_image.png';
+const CTA_IMAGE = '/images/eb9bb7e62_generated_image.jpg';
 
 export default function ServicesCta() {
   return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const FIRE_IMAGE = '/images/240dce901_generated_c820d83a.png';
+const FIRE_IMAGE = '/images/240dce901_generated_c820d83a.jpg';
 
 export default function FireFeatureSection() {
   return (

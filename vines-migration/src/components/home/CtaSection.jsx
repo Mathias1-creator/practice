@@ -1,7 +1,7 @@
 import React from 'react';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const CTA_IMAGE = '/images/8209a2e9c_generated_image.png';
+const CTA_IMAGE = '/images/8209a2e9c_generated_image.jpg';
 
 export default function CtaSection() {
   return (

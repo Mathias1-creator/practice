@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const HERO_IMAGE = '/images/2b60bf57d_generated_image.png';
+const HERO_IMAGE = '/images/2b60bf57d_generated_image.jpg';
 
 export default function ContactHero() {
   const [loaded, setLoaded] = useState(false);

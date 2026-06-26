@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const HERO_IMAGE = '/images/d41a2672c_generated_image.png';
+const HERO_IMAGE = '/images/d41a2672c_generated_image.jpg';
 
 export default function AboutHero() {
   const [loaded, setLoaded] = useState(false);

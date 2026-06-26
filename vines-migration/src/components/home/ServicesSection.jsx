@@ -8,19 +8,19 @@ const SERVICES = [
   {
     title: 'Land Management',
     desc: 'Year-round stewardship of properties from backyards to thousands of acres, including second homes — fuel reduction, tree work, property repair, grading, and more.',
-    image: '/images/0f4f7c98e_generated_image.png',
+    image: '/images/0f4f7c98e_generated_image.jpg',
     alt: 'Aerial view of managed Sonoma County estate property with oak woodland (placeholder)',
   },
   {
     title: 'Vineyard & Ranch',
     desc: 'Vineyard management, consulting and removal, plus farming, ranching, and managed sheep grazing.',
-    image: '/images/f31e8e5d7_generated_image.png',
+    image: '/images/f31e8e5d7_generated_image.jpg',
     alt: 'Vineyard rows on rolling Sonoma County hillside with sheep grazing (placeholder)',
   },
   {
     title: 'Pest & Vegetation Control',
     desc: 'Licensed herbicide and pesticide application, weed and brush abatement, and invasive species removal.',
-    image: '/images/be53c025c_generated_image.png',
+    image: '/images/be53c025c_generated_image.jpg',
     alt: 'Licensed vegetation and pest control management on California estate (placeholder)',
   },
 ];

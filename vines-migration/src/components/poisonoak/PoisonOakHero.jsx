@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const HERO_IMAGE = '/images/979afac91_generated_image.png';
+const HERO_IMAGE = '/images/979afac91_generated_image.jpg';
 
 export default function PoisonOakHero() {
   const [loaded, setLoaded] = useState(false);

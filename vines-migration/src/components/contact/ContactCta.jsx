@@ -1,7 +1,7 @@
 import React from 'react';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const CTA_IMAGE = '/images/996881026_generated_image.png';
+const CTA_IMAGE = '/images/996881026_generated_image.jpg';
 
 export default function ContactCta() {
   return (

@@ -3,7 +3,7 @@ import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 import CapabilityCard from './CapabilityCard';
 
-const IMAGE = '/images/539a3ec9f_generated_image.png';
+const IMAGE = '/images/539a3ec9f_generated_image.jpg';
 
 const CARDS = [
   { title: 'Plant Health Pesticide Application', desc: 'Targeted treatments that keep your plantings thriving.' },

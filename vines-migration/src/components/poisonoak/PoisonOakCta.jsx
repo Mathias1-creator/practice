@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const CTA_IMAGE = '/images/12f570324_generated_image.png';
+const CTA_IMAGE = '/images/12f570324_generated_image.jpg';
 
 export default function PoisonOakCta() {
   return (

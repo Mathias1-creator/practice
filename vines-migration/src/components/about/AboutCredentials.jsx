@@ -2,7 +2,7 @@ import React from 'react';
 import Eyebrow from '../shared/Eyebrow';
 import RevealWrapper from '../shared/RevealWrapper';
 
-const CREW_IMAGE = '/images/a24a02eae_generated_image.png';
+const CREW_IMAGE = '/images/a24a02eae_generated_image.jpg';
 
 const CREDS = [
   'CSLB Licensed Landscape Contractor, C-27 #1152556',

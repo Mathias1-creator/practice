@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const HERO_IMAGE = '/images/a998d7c59_generated_image.png';
+const HERO_IMAGE = '/images/a998d7c59_generated_image.jpg';
 
 export default function RealtorsHero() {
   const [loaded, setLoaded] = useState(false);
