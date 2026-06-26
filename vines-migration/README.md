@@ -1,39 +1,68 @@
-**Welcome to your Base44 project** 
+# Vines Website — Source Code
 
-**About**
+This is the complete, editable source code for the Vines website. It is a
+standard **React + Vite** project with **Tailwind CSS**. Any web developer can
+run, edit, and deploy it. There are no external account dependencies.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## Requirements
 
-This project contains everything you need to run your app locally.
+- [Node.js](https://nodejs.org/) version 18 or newer (includes `npm`)
 
-**Edit the code in your local development environment**
+## Getting Started
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+```bash
+# 1. Install dependencies (run once)
+npm install
 
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+# 2. Start the local dev server (live preview while editing)
+npm run dev
 ```
 
-Run the app: `npm run dev`
+The dev server prints a local URL (usually http://localhost:5173). Open it in a
+browser. Edits to files in `src/` update live.
 
-**Publish your changes**
+## Editing the Site
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+All site content and components live in `src/`:
 
-**Docs & Support**
+- `src/pages/`      — each page of the site
+- `src/components/` — reusable pieces (header, footer, sections, etc.)
+- `src/index.css`   — global styles
+- `public/images/`  — all images used on the site
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+## Building for Production
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+```bash
+npm run build
+```
+
+This generates a `dist/` folder containing the final static site (HTML, CSS,
+JS, images). The contents of `dist/` are what gets hosted.
+
+## Deploying
+
+The site is a static build, so it can be hosted anywhere that serves static
+files — Netlify, Vercel, Cloudflare Pages, GitHub Pages, or any web host.
+
+**Netlify (drag & drop):** run `npm run build`, then drag the `dist/` folder
+onto the Netlify dashboard.
+
+> Note: `public/_redirects` (`/* /index.html 200`) is included so that page
+> routing works correctly on Netlify. Keep this file when deploying.
+
+## Project Structure
+
+```
+.
+├── public/           static assets copied as-is (images, _redirects)
+├── src/              all editable source code
+│   ├── components/   reusable UI components
+│   ├── pages/        individual site pages
+│   ├── lib/          utilities
+│   ├── App.jsx       app routing
+│   └── main.jsx      app entry point
+├── index.html        HTML entry point
+├── package.json      dependencies and scripts
+├── vite.config.js    build configuration
+└── tailwind.config.js  Tailwind CSS configuration
+```
