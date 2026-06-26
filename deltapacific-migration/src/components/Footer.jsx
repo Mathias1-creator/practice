@@ -90,7 +90,7 @@ export default function Footer() {
                   className="font-body text-sm"
                   style={{ color: "rgba(255,255,255,0.7)" }}
                 >
-                  Hours: (placeholder)
+                  Mon–Sat, 8:00 AM – 4:00 PM
                 </span>
               </li>
             </ul>
@@ -128,7 +128,7 @@ export default function Footer() {
             className="font-body text-xs"
             style={{ color: "rgba(255,255,255,0.5)" }}
           >
-            &copy; 2026 Delta Pacific Plumbing, Inc. &middot; License # (placeholder) &middot; Licensed, Bonded and Insured.
+            &copy; 2026 Delta Pacific Plumbing, Inc. &middot; CSLB # 1155219 &middot; Licensed, Bonded and Insured.
           </p>
         </div>
       </div>

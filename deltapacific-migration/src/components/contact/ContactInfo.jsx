@@ -32,7 +32,7 @@ const cards = [
     label: "Hours",
     content: (
       <span className="font-body text-sm" style={{ color: "#4C525A" }}>
-        (placeholder)
+        Monday – Saturday, 8:00 AM – 4:00 PM
       </span>
     ),
   },

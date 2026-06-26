@@ -4,7 +4,7 @@ const credentials = [
   {
     Icon: BadgeCheck,
     label: "Licensed Contractor",
-    line: "California State License # (placeholder)",
+    line: "California CSLB License # 1155219",
   },
   {
     Icon: Shield,
@@ -14,7 +14,7 @@ const credentials = [
   {
     Icon: Calendar,
     label: "Experienced",
-    line: "(placeholder) years serving Northern California families and builders.",
+    line: "1 year serving Northern California families and builders.",
   },
 ];
 
