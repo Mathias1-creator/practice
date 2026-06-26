@@ -1,20 +1,15 @@
 export default function Wordmark({ variant = "light" }) {
-  const isLight = variant === "light";
+  const isDark = variant === "dark";
 
   return (
-    <div className="flex flex-col leading-none">
-      <span
-        className="font-heading font-extrabold text-xl md:text-2xl tracking-wide"
-        style={{ color: isLight ? "#13233B" : "#FFFFFF" }}
-      >
-        DELTA PACIFIC
-      </span>
-      <span
-        className="font-body text-xs md:text-sm font-medium tracking-[0.2em]"
-        style={{ color: "#B26B3E" }}
-      >
-        PLUMBING, INC.
-      </span>
-    </div>
+    <img
+      src={`${import.meta.env.BASE_URL}images/logo.png`}
+      alt="Delta Pacific Plumbing Inc."
+      style={{
+        height: "48px",
+        width: "auto",
+        filter: isDark ? "brightness(0) invert(1)" : "none",
+      }}
+    />
   );
 }
