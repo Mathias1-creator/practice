@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const HERO_IMG = 'https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/71a2a5a1d_IMG_4144.jpg';
+const HERO_IMG = '/images/71a2a5a1d_IMG_4144.jpg';
 
 export default function HeroSection() {
   return (

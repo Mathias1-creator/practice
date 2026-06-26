@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="https://media.base44.com/images/public/69f60b6b1e6cbf3865b683ce/7585689fd_Marvallandscaping_logo.png"
+                src="/images/7585689fd_Marvallandscaping_logo.png"
                 alt="Marval Landscaping Logo"
                 className="w-12 h-12 object-contain"
               />
