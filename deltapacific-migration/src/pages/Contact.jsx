@@ -78,8 +78,8 @@ export default function Contact() {
                   Email
                 </p>
                 <p
-                  className="font-body text-sm break-all group-hover:underline"
-                  style={{ color: "#B26B3E" }}
+                  className="font-body text-xs sm:text-sm group-hover:underline"
+                  style={{ color: "#B26B3E", wordBreak: "break-word" }}
                 >
                   mauricio@deltapacificplumbing.com
                 </p>
