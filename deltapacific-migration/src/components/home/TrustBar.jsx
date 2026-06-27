@@ -89,7 +89,7 @@ function AnimatedTrustItem({ icon: Icon, countTarget, suffix, label }) {
   const { count, ref } = useCountUp(countTarget, 1800);
   return (
     <div ref={ref} className="flex flex-col items-center text-center gap-2">
-      <Icon className="w-6 h-6 mb-1" style={{ color: "#B26B3E" }} />
+      <Icon className="w-6 h-6 mb-1" style={{ color: "#1A8781" }} />
       <span className="font-heading font-extrabold text-2xl md:text-3xl text-white">
         {count}{suffix}
       </span>
@@ -101,7 +101,7 @@ function AnimatedTrustItem({ icon: Icon, countTarget, suffix, label }) {
 function StaticTrustItem({ icon: Icon, value, label }) {
   return (
     <div className="flex flex-col items-center text-center gap-2">
-      <Icon className="w-6 h-6 mb-1" style={{ color: "#B26B3E" }} />
+      <Icon className="w-6 h-6 mb-1" style={{ color: "#1A8781" }} />
       <span className="font-heading font-extrabold text-2xl md:text-3xl text-white">
         {value}
       </span>

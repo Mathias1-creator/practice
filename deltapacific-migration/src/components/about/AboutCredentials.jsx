@@ -34,7 +34,7 @@ export default function AboutCredentials() {
             <div key={i} className="flex flex-col items-center gap-3">
               <Icon
                 className="w-8 h-8"
-                style={{ color: "#B26B3E" }}
+                style={{ color: "#1A8781" }}
                 strokeWidth={1.5}
               />
               <h3

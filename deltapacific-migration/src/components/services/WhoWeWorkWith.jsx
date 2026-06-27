@@ -56,9 +56,9 @@ export default function WhoWeWorkWith() {
               >
                 <div
                   className="w-11 h-11 rounded-lg flex items-center justify-center mb-6"
-                  style={{ backgroundColor: "rgba(178,107,62,0.1)" }}
+                  style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
                 >
-                  <Icon className="w-5 h-5" style={{ color: "#B26B3E" }} />
+                  <Icon className="w-5 h-5" style={{ color: "#1A8781" }} />
                 </div>
                 <h3
                   className="font-heading font-bold text-lg mb-3"

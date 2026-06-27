@@ -44,9 +44,9 @@ export default function Contact() {
             >
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "rgba(178,107,62,0.1)" }}
+                style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
               >
-                <Phone className="w-5 h-5" style={{ color: "#B26B3E" }} strokeWidth={1.75} />
+                <Phone className="w-5 h-5" style={{ color: "#1A8781" }} strokeWidth={1.75} />
               </div>
               <div>
                 <p className="font-body font-semibold text-sm mb-1" style={{ color: "#13233B" }}>
@@ -69,9 +69,9 @@ export default function Contact() {
             >
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "rgba(178,107,62,0.1)" }}
+                style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
               >
-                <Mail className="w-5 h-5" style={{ color: "#B26B3E" }} strokeWidth={1.75} />
+                <Mail className="w-5 h-5" style={{ color: "#1A8781" }} strokeWidth={1.75} />
               </div>
               <div>
                 <p className="font-body font-semibold text-sm mb-1" style={{ color: "#13233B" }}>
@@ -93,9 +93,9 @@ export default function Contact() {
             >
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "rgba(178,107,62,0.1)" }}
+                style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
               >
-                <Clock className="w-5 h-5" style={{ color: "#B26B3E" }} strokeWidth={1.75} />
+                <Clock className="w-5 h-5" style={{ color: "#1A8781" }} strokeWidth={1.75} />
               </div>
               <div>
                 <p className="font-body font-semibold text-sm mb-1" style={{ color: "#13233B" }}>
@@ -114,9 +114,9 @@ export default function Contact() {
             >
               <div
                 className="w-12 h-12 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "rgba(178,107,62,0.1)" }}
+                style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
               >
-                <BadgeCheck className="w-5 h-5" style={{ color: "#B26B3E" }} strokeWidth={1.75} />
+                <BadgeCheck className="w-5 h-5" style={{ color: "#1A8781" }} strokeWidth={1.75} />
               </div>
               <div>
                 <p className="font-body font-semibold text-sm mb-1" style={{ color: "#13233B" }}>
@@ -134,7 +134,7 @@ export default function Contact() {
             className="rounded-xl px-8 py-10 text-center"
             style={{ backgroundColor: "#13233B" }}
           >
-            <MapPin className="w-6 h-6 mx-auto mb-4" style={{ color: "#B26B3E" }} strokeWidth={1.75} />
+            <MapPin className="w-6 h-6 mx-auto mb-4" style={{ color: "#1A8781" }} strokeWidth={1.75} />
             <h3
               className="font-heading font-bold text-xl sm:text-2xl text-white mb-3"
             >

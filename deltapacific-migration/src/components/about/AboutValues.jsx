@@ -60,7 +60,7 @@ export default function AboutValues() {
             >
               <Icon
                 className="w-7 h-7 mb-5"
-                style={{ color: "#B26B3E" }}
+                style={{ color: "#1A8781" }}
                 strokeWidth={1.5}
               />
               <h3

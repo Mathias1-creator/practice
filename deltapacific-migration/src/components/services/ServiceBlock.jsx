@@ -72,7 +72,7 @@ export default function ServiceBlock({ id, number, eyebrow, heading, paragraph, 
                 <li key={i} className="flex items-start gap-3">
                   <CheckCircle
                     className="w-4 h-4 flex-shrink-0 mt-0.5"
-                    style={{ color: "#B26B3E" }}
+                    style={{ color: "#1A8781" }}
                   />
                   <span
                     className="font-body text-sm leading-relaxed"

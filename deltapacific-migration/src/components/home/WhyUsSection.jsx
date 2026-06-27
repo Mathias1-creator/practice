@@ -61,7 +61,7 @@ export default function WhyUsSection() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               {trustItems.map((item) => (
                 <div key={item} className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: "#B26B3E" }} />
+                  <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: "#1A8781" }} />
                   <span className="font-body font-medium text-sm" style={{ color: "#13233B" }}>
                     {item}
                   </span>
