@@ -30,8 +30,8 @@ export default function GalleryPreview() {
           </p>
         </div>
 
-        {/* Masonry Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6 space-y-4 md:space-y-6">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {galleryImages.map((img, i) => (
             <GalleryItem key={i} image={img} index={i} />
           ))}
@@ -70,12 +70,12 @@ function GalleryItem({ image, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
-      className="break-inside-avoid relative group overflow-hidden rounded-lg cursor-pointer"
+      className="relative group overflow-hidden rounded-lg cursor-pointer bg-white aspect-[3/4]"
     >
       <img
         src={image.src}
         alt={`${image.label} plumbing project`}
-        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         style={{ borderRadius: "6px" }}
       />
       {/* Hover overlay */}

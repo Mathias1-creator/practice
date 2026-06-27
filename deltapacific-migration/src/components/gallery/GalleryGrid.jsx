@@ -10,7 +10,7 @@ function GalleryImage({ src, caption }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.4 }}
-      className="relative overflow-hidden rounded-lg cursor-pointer mb-4 md:mb-6 break-inside-avoid"
+      className="relative overflow-hidden rounded-lg cursor-pointer bg-white aspect-[3/4]"
       style={{
         boxShadow: hovered
           ? "0 16px 40px -10px rgba(19,35,59,0.18)"
@@ -24,12 +24,12 @@ function GalleryImage({ src, caption }) {
       <img
         src={src}
         alt={caption}
-        className="w-full h-auto block"
+        className="w-full h-full object-cover"
         style={{ borderRadius: "6px" }}
       />
       {/* Hover overlay */}
       <div
-        className="absolute inset-0 flex items-end justify-start p-4 transition-opacity duration-300"
+        className="absolute inset-0 transition-opacity duration-300"
         style={{
           background: "linear-gradient(to top, rgba(178,107,62,0.75) 0%, rgba(178,107,62,0.1) 60%, transparent 100%)",
           opacity: hovered ? 1 : 0,
@@ -42,7 +42,7 @@ function GalleryImage({ src, caption }) {
 
 export default function GalleryGrid({ images }) {
   return (
-    <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
       {images.map((img, i) => (
         <GalleryImage key={i} src={img.src} caption={img.caption} />
       ))}
