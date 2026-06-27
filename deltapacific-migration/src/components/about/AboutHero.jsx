@@ -7,7 +7,7 @@ export default function AboutHero() {
       <div className="max-w-3xl mx-auto">
         <p
           className="font-body font-semibold text-xs tracking-[0.15em] mb-5"
-          style={{ color: "#B26B3E" }}
+          style={{ color: "#1A8781" }}
         >
           ABOUT US
         </p>

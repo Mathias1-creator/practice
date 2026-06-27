@@ -52,7 +52,7 @@ export default function ContactInfo() {
     <div>
       <p
         className="font-body font-semibold text-xs tracking-[0.15em] mb-3"
-        style={{ color: "#B26B3E" }}
+        style={{ color: "#1A8781" }}
       >
         GET IN TOUCH
       </p>

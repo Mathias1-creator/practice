@@ -15,7 +15,7 @@ export default function GalleryPreview() {
         <div className="text-center mb-14">
           <p
             className="font-body font-semibold text-xs tracking-[0.15em] mb-3"
-            style={{ color: "#B26B3E" }}
+            style={{ color: "#1A8781" }}
           >
             RECENT WORK
           </p>

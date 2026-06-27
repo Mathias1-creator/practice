@@ -42,7 +42,7 @@ export default function AboutServiceArea() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center">
         <p
           className="font-body font-semibold text-xs tracking-[0.15em] mb-3"
-          style={{ color: "#B26B3E" }}
+          style={{ color: "#1A8781" }}
         >
           WHERE WE WORK
         </p>

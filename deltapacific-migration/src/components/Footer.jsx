@@ -40,7 +40,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-body font-semibold text-sm tracking-wider mb-4"
-              style={{ color: "#B26B3E" }}
+              style={{ color: "#1A8781" }}
             >
               Explore
             </h4>
@@ -63,7 +63,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-body font-semibold text-sm tracking-wider mb-4"
-              style={{ color: "#B26B3E" }}
+              style={{ color: "#1A8781" }}
             >
               Contact
             </h4>
@@ -101,7 +101,7 @@ export default function Footer() {
           <div>
             <h4
               className="font-body font-semibold text-sm tracking-wider mb-4"
-              style={{ color: "#B26B3E" }}
+              style={{ color: "#1A8781" }}
             >
               Service Area
             </h4>

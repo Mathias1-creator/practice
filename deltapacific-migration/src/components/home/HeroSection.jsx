@@ -31,7 +31,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-body font-semibold text-xs tracking-[0.15em] mb-5"
-            style={{ color: "#B26B3E" }}
+            style={{ color: "#1A8781" }}
           >
             FAMILY-OWNED &middot; NORTHERN CALIFORNIA
           </motion.p>
