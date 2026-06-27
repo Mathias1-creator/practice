@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  { src: "/images/gallery_gasline1.jpg", label: "Gas Line", tall: true },
   { src: "/images/remodels_real.jpg", label: "Repipe", tall: false },
-  { src: "/images/gallery_shower.jpg", label: "Remodel", tall: true },
-  { src: "/images/gallery_commercial1.jpg", label: "Commercial", tall: true },
-  { src: "/images/gallery_gasline2.jpg", label: "New Construction", tall: false },
-  { src: "/images/gallery_commercial2.jpg", label: "Commercial", tall: false },
+  { src: "/images/gallery_shower.jpg", label: "Remodel", tall: false },
+  { src: "/images/gallery_commercial1.jpg", label: "Commercial", tall: false },
 ];
 
 export default function GalleryPreview() {

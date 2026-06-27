@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 
-const HERO_IMG = "/images/newconstruction_real.jpg";
+const HERO_IMG = "/images/0af246fb9_generated_3393a007.png";
 
 export default function HeroSection() {
   return (
@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
-          alt="Delta Pacific Plumbing new construction rough-in"
+          alt="Modern home interior under construction"
           className="w-full h-full object-cover"
         />
         {/* Gradient overlay */}
