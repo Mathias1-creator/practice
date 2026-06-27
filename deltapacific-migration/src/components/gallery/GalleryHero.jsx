@@ -20,7 +20,7 @@ export default function GalleryHero() {
           className="font-body text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
           style={{ color: "rgba(255,255,255,0.75)" }}
         >
-          A look at the new construction, remodel, and repipe work Delta Pacific delivers across Northern California. Real project photos coming soon.
+          A look at the new construction, remodel, and repipe work Delta Pacific delivers across Northern California.
         </p>
       </div>
     </section>

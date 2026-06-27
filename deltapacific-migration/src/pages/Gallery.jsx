@@ -5,30 +5,20 @@ import GalleryCategorySection from "../components/gallery/GalleryCategorySection
 import GalleryCTA from "../components/gallery/GalleryCTA";
 
 const newConstructionImages = [
-  { src: "/images/71039a914_generated_image.png", caption: "Custom Home Rough-In" },
-  { src: "/images/d10e6833f_generated_image.png", caption: "Tract Home Plumbing" },
-  { src: "/images/a1e40df5e_generated_image.png", caption: "ADU Water Lines" },
-  { src: "/images/67098db6c_generated_image.png", caption: "Slab Rough-In" },
-  { src: "/images/aeba3829f_generated_image.png", caption: "Finish Fixture Set" },
-  { src: "/images/c893b9fb2_generated_image.png", caption: "Gas Line Installation" },
+  { src: "/images/newconstruction_real.jpg", caption: "New Construction Rough-In" },
+  { src: "/images/gallery_gasline1.jpg", caption: "Gas Meter & Service Line" },
+  { src: "/images/gallery_gasline2.jpg", caption: "Underground Gas Line" },
 ];
 
 const remodelsImages = [
-  { src: "/images/b836b9bfc_generated_image.png", caption: "Whole-Home Repipe" },
-  { src: "/images/3a27d9692_generated_image.png", caption: "Kitchen Remodel" },
-  { src: "/images/d7c416117_generated_image.png", caption: "Bathroom Remodel" },
-  { src: "/images/b836b9bfc_generated_image.png", caption: "Copper Repipe" },
-  { src: "/images/a5649d7c1_generated_image.png", caption: "PEX Installation" },
-  { src: "/images/9bb50534c_generated_image.png", caption: "Fixture Upgrade" },
+  { src: "/images/remodels_real.jpg", caption: "DWV Repipe" },
+  { src: "/images/gallery_shower.jpg", caption: "Bathroom Remodel" },
 ];
 
 const serviceRepairsImages = [
-  { src: "/images/d76516d8b_generated_image.png", caption: "Water Heater Install" },
-  { src: "/images/eafe95f13_generated_image.png", caption: "Faucet Replacement" },
-  { src: "/images/9a855abff_generated_image.png", caption: "Toilet Installation" },
-  { src: "/images/f170d866b_generated_image.png", caption: "Leak Repair" },
-  { src: "/images/9bb50534c_generated_image.png", caption: "Fixture Replacement" },
-  { src: "/images/886a9c72a_generated_image.png", caption: "Repipe Repair" },
+  { src: "/images/servicerepairs_real.jpg", caption: "Tankless Water Heater Install" },
+  { src: "/images/gallery_commercial1.jpg", caption: "Commercial Backflow" },
+  { src: "/images/gallery_commercial2.jpg", caption: "Commercial Repipe" },
 ];
 
 const categories = [

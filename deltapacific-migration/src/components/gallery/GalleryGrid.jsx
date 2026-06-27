@@ -23,14 +23,10 @@ function GalleryImage({ src, caption }) {
     >
       <img
         src={src}
-        alt={`${caption} (placeholder)`}
+        alt={caption}
         className="w-full h-56 sm:h-60 object-cover"
         style={{ borderRadius: "6px" }}
       />
-      {/* Placeholder badge */}
-      <div className="absolute top-3 right-3 bg-black/50 text-white text-xs font-body px-2.5 py-0.5 rounded-full z-10">
-        (placeholder)
-      </div>
       {/* Hover overlay */}
       <div
         className="absolute inset-0 flex items-end justify-start p-4 transition-opacity duration-300"
