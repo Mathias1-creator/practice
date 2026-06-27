@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const TEAM_IMG = "/images/b1766a2dc_generated_image.png";
+const LOGO_IMG = `${import.meta.env.BASE_URL}images/logo.png`;
 
 export default function AboutStory() {
   return (
@@ -15,19 +15,18 @@ export default function AboutStory() {
             transition={{ duration: 0.5 }}
             className="relative"
           >
-            <img
-              src={TEAM_IMG}
-              alt="Delta Pacific Plumbing owner on a job site (placeholder)"
-              className="w-full rounded-xl object-cover"
+            <div
+              className="w-full rounded-xl flex items-center justify-center bg-white"
               style={{
                 boxShadow: "0 12px 40px -10px rgba(19,35,59,0.18)",
                 aspectRatio: "4/3",
               }}
-            />
-            <div
-              className="absolute top-4 right-4 bg-black/50 text-white text-xs font-body px-2.5 py-0.5 rounded-full"
             >
-              (placeholder)
+              <img
+                src={LOGO_IMG}
+                alt="Delta Pacific Plumbing"
+                className="w-3/4 max-w-md object-contain"
+              />
             </div>
           </motion.div>
 
