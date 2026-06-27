@@ -56,7 +56,7 @@ export default function HowWeWork() {
                 <div
                   className="hidden lg:block absolute top-[2.75rem] left-1/2 w-full h-px"
                   style={{
-                    background: "linear-gradient(to right, rgba(178,107,62,0.5) 50%, rgba(178,107,62,0.15) 100%)",
+                    background: "linear-gradient(to right, rgba(26,135,129,0.5) 50%, rgba(26,135,129,0.15) 100%)",
                     zIndex: 0,
                   }}
                 />
@@ -66,13 +66,13 @@ export default function HowWeWork() {
               <div
                 className="relative z-10 w-14 h-14 rounded-full flex items-center justify-center mb-5 flex-shrink-0"
                 style={{
-                  border: "2px solid rgba(178,107,62,0.5)",
-                  backgroundColor: "rgba(178,107,62,0.08)",
+                  border: "2px solid rgba(26,135,129,0.5)",
+                  backgroundColor: "rgba(26,135,129,0.08)",
                 }}
               >
                 <span
                   className="font-heading font-extrabold text-lg"
-                  style={{ color: "#B26B3E" }}
+                  style={{ color: "#1A8781" }}
                 >
                   {step.number}
                 </span>

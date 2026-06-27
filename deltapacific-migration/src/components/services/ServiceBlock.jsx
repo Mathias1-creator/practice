@@ -38,7 +38,7 @@ export default function ServiceBlock({ id, number, eyebrow, heading, paragraph, 
           >
             <span
               className="font-heading font-extrabold text-4xl md:text-5xl block mb-3"
-              style={{ color: "rgba(178,107,62,0.25)" }}
+              style={{ color: "rgba(26,135,129,0.25)" }}
             >
               {number}
             </span>

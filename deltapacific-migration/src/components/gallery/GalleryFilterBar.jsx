@@ -18,15 +18,15 @@ export default function GalleryFilterBar({ active, onChange }) {
                 onClick={() => onChange(f.value)}
                 className="font-body font-medium text-sm px-5 py-2 rounded-full border-2 transition-all duration-200"
                 style={{
-                  backgroundColor: isActive ? "#B26B3E" : "transparent",
+                  backgroundColor: isActive ? "#1A8781" : "transparent",
                   color: isActive ? "#FFFFFF" : "#13233B",
-                  borderColor: isActive ? "#B26B3E" : "#13233B",
+                  borderColor: isActive ? "#1A8781" : "#13233B",
                 }}
                 onMouseEnter={(e) => {
                   if (!isActive) {
-                    e.currentTarget.style.backgroundColor = "rgba(178,107,62,0.08)";
-                    e.currentTarget.style.borderColor = "#B26B3E";
-                    e.currentTarget.style.color = "#B26B3E";
+                    e.currentTarget.style.backgroundColor = "rgba(26,135,129,0.08)";
+                    e.currentTarget.style.borderColor = "#1A8781";
+                    e.currentTarget.style.color = "#1A8781";
                   }
                 }}
                 onMouseLeave={(e) => {

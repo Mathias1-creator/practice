@@ -22,11 +22,11 @@ function CountyTile({ name, index }) {
       transition={{ duration: 0.35, delay: index * 0.06 }}
       className="rounded-lg px-4 py-5 text-center font-body font-medium text-sm border-2 transition-all duration-200 cursor-default"
       style={{
-        backgroundColor: hovered ? "#B26B3E" : "transparent",
-        borderColor: "#B26B3E",
+        backgroundColor: hovered ? "#1A8781" : "transparent",
+        borderColor: "#1A8781",
         color: "#FFFFFF",
         transform: hovered ? "translateY(-3px)" : "translateY(0)",
-        boxShadow: hovered ? "0 8px 24px -6px rgba(178,107,62,0.35)" : "none",
+        boxShadow: hovered ? "0 8px 24px -6px rgba(26,135,129,0.35)" : "none",
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

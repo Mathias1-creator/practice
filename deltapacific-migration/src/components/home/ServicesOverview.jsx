@@ -73,9 +73,9 @@ function ServiceCard({ service, index }) {
     >
       <div
         className="w-12 h-12 rounded-lg flex items-center justify-center mb-6"
-        style={{ backgroundColor: "rgba(178, 107, 62, 0.1)" }}
+        style={{ backgroundColor: "rgba(26,135,129,0.1)" }}
       >
-        <Icon className="w-6 h-6" style={{ color: "#B26B3E" }} />
+        <Icon className="w-6 h-6" style={{ color: "#1A8781" }} />
       </div>
       <h3
         className="font-heading font-bold text-xl mb-3"
