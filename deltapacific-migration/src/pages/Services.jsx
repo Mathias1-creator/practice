@@ -6,7 +6,7 @@ import ServicesCTA from "../components/services/ServicesCTA";
 
 const NEW_CONSTRUCTION_IMG = "/images/newconstruction_real.jpg";
 const REMODELS_IMG = "/images/aeb96ab9d_generated_image.png";
-const SERVICE_REPAIRS_IMG = "/images/1dea21695_generated_image.png";
+const SERVICE_REPAIRS_IMG = "/images/servicerepairs_real.jpg";
 
 const newConstructionItems = [
   "Underground and slab rough-in plumbing",
