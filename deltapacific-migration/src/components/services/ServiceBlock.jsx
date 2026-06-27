@@ -25,9 +25,6 @@ export default function ServiceBlock({ id, number, eyebrow, heading, paragraph, 
                 className="w-full h-auto object-cover"
                 style={{ borderRadius: "6px" }}
               />
-              <div className="absolute top-4 right-4 bg-black/50 text-white text-xs font-body px-3 py-1 rounded-full">
-                (placeholder)
-              </div>
             </div>
           </motion.div>
 

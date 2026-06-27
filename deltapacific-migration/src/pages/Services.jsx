@@ -4,7 +4,7 @@ import ServiceBlock from "../components/services/ServiceBlock";
 import HowWeWork from "../components/services/HowWeWork";
 import ServicesCTA from "../components/services/ServicesCTA";
 
-const NEW_CONSTRUCTION_IMG = "/images/8aeefe6f1_generated_image.png";
+const NEW_CONSTRUCTION_IMG = "/images/newconstruction_real.jpg";
 const REMODELS_IMG = "/images/aeb96ab9d_generated_image.png";
 const SERVICE_REPAIRS_IMG = "/images/1dea21695_generated_image.png";
 
