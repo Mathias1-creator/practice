@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/7585689fd_Marvallandscaping_logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Marval Landscaping Services | Arroyo Grande, CA</title>
+    <meta name="description" content="Marval Landscaping Services — licensed C-27 contractor serving the Central Coast. Landscaping, hardscape, irrigation, lighting &amp; more. Free estimates. Call (805) 602-2230." />
+    <meta property="og:title" content="Marval Landscaping Services" />
+    <meta property="og:description" content="17 years of transforming outdoor spaces on the Central Coast. Licensed C-27 | Lic# 1087803 | Free Estimates." />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/assets/index-BU_C376i.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DGsjHzEf.css">
+    <script type="module">
+if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
