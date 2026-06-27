@@ -28,26 +28,6 @@ const faqs = [
     answer:
       "It depends on project size and current scheduling. For smaller repairs we can often get out within a few days. For new construction or repipes, call us early so we can get you on the schedule before your timeline gets tight.",
   },
-  {
-    question: "Do you offer free estimates?",
-    answer:
-      "Yes. We are happy to come out, review the scope, and give you a clear quote before any work begins. No surprises.",
-  },
-  {
-    question: "What types of plumbing work do you specialize in?",
-    answer:
-      "Our core work includes new construction rough-in for custom homes, ADUs, and tract builds, full repipes, water heater installation and replacement, and general plumbing repairs. We self-perform 100% of our work — no subcontracting.",
-  },
-  {
-    question: "Can you work from architectural plans?",
-    answer:
-      "Yes. We regularly work from full plan sets and coordinate directly with GCs, project managers, and inspectors to keep jobs moving on schedule.",
-  },
-  {
-    question: "What are your payment options?",
-    answer:
-      "We accept check and major credit cards. For larger projects we can discuss a draw schedule tied to project milestones. Reach out and we will work out what makes sense for your job.",
-  },
 ];
 
 function FAQItem({ question, answer }) {
