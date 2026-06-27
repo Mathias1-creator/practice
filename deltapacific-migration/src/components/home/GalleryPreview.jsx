@@ -85,9 +85,7 @@ function GalleryItem({ image, index }) {
           background: "linear-gradient(to top, rgba(178, 107, 62, 0.6) 0%, transparent 60%)",
           borderRadius: "6px",
         }}
-      >
-        <span className="font-body font-medium text-sm text-white">{image.label}</span>
-      </div>
+      ></div>
     </motion.div>
   );
 }

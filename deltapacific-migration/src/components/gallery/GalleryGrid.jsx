@@ -35,9 +35,7 @@ function GalleryImage({ src, caption }) {
           opacity: hovered ? 1 : 0,
           borderRadius: "6px",
         }}
-      >
-        <span className="font-body font-medium text-sm text-white">{caption}</span>
-      </div>
+      ></div>
     </motion.div>
   );
 }
