@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  { src: "/images/9319ea20a_generated_47a8e183.png", label: "New Construction", tall: true },
-  { src: "/images/16cce5894_generated_b2dc783a.png", label: "Repipe", tall: false },
-  { src: "/images/2e3a410c3_generated_21d7843b.png", label: "Remodel", tall: true },
-  { src: "/images/8c60f9a83_generated_bbaea7f0.png", label: "New Construction", tall: false },
-  { src: "/images/3e5ba0c11_generated_2856fca5.png", label: "Remodel", tall: true },
-  { src: "/images/7c744d924_generated_916a55dd.png", label: "Repipe", tall: false },
+  { src: "/images/gallery_gasline1.jpg", label: "Gas Line", tall: true },
+  { src: "/images/remodels_real.jpg", label: "Repipe", tall: false },
+  { src: "/images/gallery_shower.jpg", label: "Remodel", tall: true },
+  { src: "/images/gallery_commercial1.jpg", label: "Commercial", tall: true },
+  { src: "/images/gallery_gasline2.jpg", label: "New Construction", tall: false },
+  { src: "/images/gallery_commercial2.jpg", label: "Commercial", tall: false },
 ];
 
 export default function GalleryPreview() {
@@ -77,14 +77,10 @@ function GalleryItem({ image, index }) {
     >
       <img
         src={image.src}
-        alt={`${image.label} plumbing project (placeholder)`}
+        alt={`${image.label} plumbing project`}
         className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
         style={{ borderRadius: "6px" }}
       />
-      {/* Placeholder badge */}
-      <div className="absolute top-3 right-3 bg-black/50 text-white text-xs font-body px-2.5 py-0.5 rounded-full z-10">
-        (placeholder)
-      </div>
       {/* Hover overlay */}
       <div
         className="absolute inset-0 flex items-end justify-start p-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

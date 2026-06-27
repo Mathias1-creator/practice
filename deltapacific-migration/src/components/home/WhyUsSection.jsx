@@ -1,7 +1,7 @@
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
-const WHY_US_IMG = "/images/56f0e7d5c_generated_da9723b2.png";
+const WHY_US_IMG = "/images/servicerepairs_real.jpg";
 
 const trustItems = [
   "Self-Performed Work",
@@ -25,13 +25,10 @@ export default function WhyUsSection() {
             <div className="rounded-lg overflow-hidden">
               <img
                 src={WHY_US_IMG}
-                alt="Plumber working on new construction plumbing (placeholder)"
+                alt="Tankless water heater installation by Delta Pacific Plumbing"
                 className="w-full h-auto object-cover"
                 style={{ borderRadius: "6px" }}
               />
-            </div>
-            <div className="absolute top-4 right-4 bg-black/50 text-white text-xs font-body px-3 py-1 rounded-full">
-              (placeholder)
             </div>
           </motion.div>
 

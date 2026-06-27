@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 
-const HERO_IMG = "/images/0af246fb9_generated_3393a007.png";
+const HERO_IMG = "/images/newconstruction_real.jpg";
 
 export default function HeroSection() {
   return (
@@ -11,13 +11,9 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={HERO_IMG}
-          alt="Modern home interior under construction (placeholder)"
+          alt="Delta Pacific Plumbing new construction rough-in"
           className="w-full h-full object-cover"
         />
-        {/* Placeholder badge */}
-        <div className="absolute top-4 right-4 bg-black/50 text-white text-xs font-body px-3 py-1 rounded-full z-10">
-          (placeholder)
-        </div>
         {/* Gradient overlay */}
         <div
           className="absolute inset-0"
