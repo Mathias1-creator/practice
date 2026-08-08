@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 56% 5%;
+    --foreground: 0 0% 100%;
+    --card: 216 56% 13%;
+    --card-foreground: 0 0% 100%;
+    --popover: 216 56% 9%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 200 60% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 85% 66%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 207 25% 47%;
+    --muted-foreground: 207 25% 47%;
+    --accent: 200 85% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 85% 66%;
+    --input: 200 85% 66%;
+    --ring: 200 60% 53%;
+    --chart-1: 200 60% 53%;
+    --chart-2: 200 85% 66%;
+    --chart-3: 0 74% 57%;
+    --chart-4: 207 25% 47%;
+    --chart-5: 216 56% 13%;
+    --radius: 0rem;
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --sidebar-background: 216 56% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 200 60% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 56% 9%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 200 85% 66%;
+    --sidebar-ring: 200 60% 53%;
+  }
+
+  .dark {
+    --background: 216 56% 5%;
+    --foreground: 0 0% 100%;
+    --card: 216 56% 13%;
+    --card-foreground: 0 0% 100%;
+    --popover: 216 56% 9%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 200 60% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 85% 66%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 207 25% 47%;
+    --muted-foreground: 207 25% 47%;
+    --accent: 200 85% 66%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 74% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 200 85% 66%;
+    --input: 200 85% 66%;
+    --ring: 200 60% 53%;
+    --chart-1: 200 60% 53%;
+    --chart-2: 200 85% 66%;
+    --chart-3: 0 74% 57%;
+    --chart-4: 207 25% 47%;
+    --chart-5: 216 56% 13%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    background-color: #060d18;
+    color: #ffffff;
+    animation: pageIn 0.4s ease forwards;
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060d18;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b9fd4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5bc8f5;
+}
+
+/* Scrollbar for Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #3b9fd4 #060d18;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
