@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 33% 95%;
+    --foreground: 220 12% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 12% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 12% 11%;
+    --primary: 26 50% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 37% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 213 22% 93%;
+    --muted-foreground: 214 7% 33%;
+    --accent: 213 22% 93%;
+    --accent-foreground: 213 37% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 22% 88%;
+    --input: 213 22% 88%;
+    --ring: 26 50% 47%;
+    --chart-1: 26 50% 47%;
+    --chart-2: 213 37% 15%;
+    --chart-3: 214 7% 33%;
+    --chart-4: 34 33% 95%;
+    --chart-5: 213 22% 93%;
+    --radius: 0.375rem;
+
+    --navy: #13233B;
+    --navy-hover: #0E1B2E;
+    --copper: #B26B3E;
+    --copper-hover: #9A5A30;
+    --off-white: #F7F4EF;
+    --light-gray: #EBEFF3;
+    --slate: #4C525A;
+    --charcoal: #1A1D21;
+
+    --font-heading: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Archivo', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 37% 10%;
+    --foreground: 0 0% 98%;
+    --card: 213 37% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 213 37% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 26 50% 47%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 34 33% 95%;
+    --secondary-foreground: 213 37% 15%;
+    --muted: 213 37% 20%;
+    --muted-foreground: 213 22% 70%;
+    --accent: 213 37% 20%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 37% 25%;
+    --input: 213 37% 25%;
+    --ring: 26 50% 47%;
+    --chart-1: 26 50% 47%;
+    --chart-2: 213 22% 93%;
+    --chart-3: 34 33% 95%;
+    --chart-4: 214 7% 33%;
+    --chart-5: 213 37% 30%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    background-color: var(--off-white);
+    color: var(--slate);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--off-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 4px;
+}

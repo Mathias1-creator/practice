@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 93%;
+    --foreground: 100 12% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 100 12% 13%;
+    --popover: 40 30% 93%;
+    --popover-foreground: 100 12% 13%;
+    --primary: 145 20% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 38 22% 88%;
+    --secondary-foreground: 100 12% 13%;
+    --muted: 38 22% 88%;
+    --muted-foreground: 43 9% 40%;
+    --accent: 39 39% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 37 22% 81%;
+    --input: 37 22% 81%;
+    --ring: 145 20% 27%;
+    --chart-1: 145 20% 27%;
+    --chart-2: 39 39% 43%;
+    --chart-3: 38 22% 88%;
+    --chart-4: 40 30% 93%;
+    --chart-5: 43 9% 40%;
+    --radius: 0.25rem;
+    --font-heading: 'Fraunces', serif;
+    --font-body: 'Hanken Grotesk', sans-serif;
+    --font-display: 'Fraunces', serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+    --forest: #1e2a22;
+    --pine: #35513f;
+    --bone: #f4efe5;
+    --sand: #ece5d6;
+    --white: #ffffff;
+    --heading: #21261f;
+    --body: #3b3f37;
+    --caption: #6f6a5d;
+    --stone: #a89a82;
+    --brass: #9a7b43;
+    --line: #d9d0bf;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 100 12% 13%;
+    --foreground: 40 30% 93%;
+    --card: 145 15% 15%;
+    --card-foreground: 40 30% 93%;
+    --popover: 100 12% 13%;
+    --popover-foreground: 40 30% 93%;
+    --primary: 40 30% 93%;
+    --primary-foreground: 145 20% 27%;
+    --secondary: 145 15% 20%;
+    --secondary-foreground: 40 30% 93%;
+    --muted: 145 15% 20%;
+    --muted-foreground: 43 9% 60%;
+    --accent: 39 39% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 145 15% 20%;
+    --input: 145 15% 20%;
+    --ring: 40 30% 93%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--body);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--heading);
+    line-height: 1.15;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sand);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pine);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest);
+}
+
+/* Scrollbar for Firefox */
+html {
+  scrollbar-color: var(--pine) var(--sand);
+  scrollbar-width: thin;
+}
